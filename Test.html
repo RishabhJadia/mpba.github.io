@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Official MPBA Website</title>
+
+	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+	<meta http-equiv="Content-Type" e="text/html;charset=utf-8">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet"> -->
+
+
+
+	<meta name="description"
+		content="In MADHYA PRADESH, we have extremely talented badminton players and we have great badminton minds and coaches">
+	<meta name="keywords" content="MPBA,mpba,MADHYA PRADESH BADMINTON,Badminton,madhya pradesh badminton">
+	<meta name="author" content="Rishabh,Harshit">
+
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" type="text/css" href="ticker.css">
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="jquery.js"></script>
+	<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>  -->
+	<script src="ticker.js"></script>
+	<script src="myjs.js"></script>
+
+	<!--   <script src = "fittext.js"></script> -->
+	<!-- <script type="text/javascript">
+	$(document).ready(function(){
+		
+				$("#mar").hide();
+
+});
+</script>  -->
+	<style type="text/css">
+		.navbar-default {
+			background-color: #F8F8F8;
+			border-color: #E7E7E7;
+		}
+
+		/* Title */
+		.navbar-default .navbar-brand {
+			color: #777;
+		}
+
+		.navbar-default .navbar-brand:hover,
+		.navbar-default .navbar-brand:focus {
+			color: #5E5E5E;
+		}
+
+		/* Link */
+		.navbar-default .navbar-nav>li>a {
+			color: #777;
+		}
+
+		.navbar-default .navbar-nav>li>a:hover,
+		.navbar-default .navbar-nav>li>a:focus {
+			color: #333;
+		}
+
+		.navbar-default .navbar-nav>.active>a,
+		.navbar-default .navbar-nav>.active>a:hover,
+		.navbar-default .navbar-nav>.active>a:focus {
+			color: #555;
+			background-color: #E7E7E7;
+		}
+
+		.navbar-default .navbar-nav>.open>a,
+		.navbar-default .navbar-nav>.open>a:hover,
+		.navbar-default .navbar-nav>.open>a:focus {
+			color: #555;
+			background-color: #D5D5D5;
+		}
+
+		/* Caret */
+		.navbar-default .navbar-nav>.dropdown>a .caret {
+			border-top-color: #777;
+			border-bottom-color: #777;
+		}
+
+		.navbar-default .navbar-nav>.dropdown>a:hover .caret,
+		.navbar-default .navbar-nav>.dropdown>a:focus .caret {
+			border-top-color: #333;
+			border-bottom-color: #333;
+		}
+
+		.navbar-default .navbar-nav>.open>a .caret,
+		.navbar-default .navbar-nav>.open>a:hover .caret,
+		.navbar-default .navbar-nav>.open>a:focus .caret {
+			border-top-color: #555;
+			border-bottom-color: #555;
+		}
+
+		/* Mobile version */
+		.navbar-default .navbar-toggle {
+			border-color: #DDD;
+		}
+
+		.navbar-default .navbar-toggle:hover,
+		.navbar-default .navbar-toggle:focus {
+			background-color: #DDD;
+		}
+
+		.navbar-default .navbar-toggle .icon-bar {
+			background-color: #CCC;
+		}
+
+		@media (max-width: 767px) {
+			.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+				color: #777;
+			}
+
+			.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
+			.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+				color: #333;
+			}
+		}
+
+		.dropdown-submenu {
+			position: relative;
+		}
+
+		.dropdown-submenu .dropdown-menu {
+			top: 0;
+			left: 100%;
+			margin-top: -1px;
+		}
+	</style>
+</head>
+
+<body>
+	<script>
+		window.addEventListener('resize', change);
+
+
+		function change() {
+
+
+			if (window.innerWidth <= 700) {
+
+				document.getElementById("head").style.fontSize = "15px";
+				document.getElementById("slider").style.display = 'none';
+				document.getElementById("sponsor").style.width = '350px';
+				document.getElementById("logo").style.width = '43%';
+
+				/*document.getElementById("tick").style.display = 'none';
+				document.getElementById("mar").style.display = 'block';
+				
+				*/
+			} else {
+				document.getElementById("head").style.fontSize = "36px";
+				document.getElementById("slider").style.display = 'block';
+				document.getElementById("logo").style.width = '13%';
+				/*
+				document.getElementById("mar").style.display = 'none';
+				document.getElementById("tick").style.display = 'block';*/
+			}
+		}
+
+		$(document).ready(function () {
+			change();
+
+
+
+			if (window.location.toString().indexOf("success") !== -1) {
+				//alert("success")
+				$('#myModal').modal('toggle');
+			}
+
+
+
+			/*document.getElementById("sponsor").style.width = '40%';
+			document.getElementById("sponsor").style.height = '40%';*/
+		});
+
+
+		$(document).ready(function () {
+
+
+			$('.dropdown-submenu a.test').on("click", function (e) {
+				$(this).next('ul').toggle();
+				e.stopPropagation();
+				e.preventDefault();
+			});
+
+
+
+
+
+
+		});
+
+
+	</script>
+
+
+
+
+
+
+
+
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Submit success</h4>
+				</div>
+				<div class="modal-body">
+					<p>Your form has successfully submitted.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+	<!-- <div class = "col-md-2 back">
+	</div> -->
+	<div class="col-md-12 margi">
+		<div class="wrap margi">
+			<div class="header container-fluid">
+				<img id="logo" src="logo.png">
+				<br>
+				<h1 id="head" style="color:red;">
+					<b>MADHYA PRADESH BADMINTON ASSOCIATION</b></h1>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!--  <a class="navbar-brand" href="#">WebSiteName</a> -->
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="registration.html">Registration</a></li>
+
+						<li class="dropdown">
+							<a class="dropdown-toggle expand" data-toggle="dropdown" href="#">Players<span
+									class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-submenu">
+									<a id="ss" class="test" tabindex="-1" href="#">Players Id<span
+											class="caret"></span></a>
+									<ul id="ssh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+										<li><a href="http://www.badmintonindia.org/players/bwf-player-id/"
+												style="text-decoration: none;" target="_blank">BWF (Search Last Name
+												Followed By First Name)</a></li>
+										<li><a href="http://www.badmintonindia.org/players/bai-player-id/"
+												style="text-decoration: none;" target="_blank">BAI (Search Last Name
+												Followed By First Name)</a></li>
+										<li><a href="mpba_player_ids.pdf" style="text-decoration: none;"
+												target="_blank">MPBA</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a id="js" class="test" tabindex="-1" href="#">Players Id Form<span
+											class="caret"></span></a>
+									<ul id="jsh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+										<li><a href="BWF_FORM.pdf" style="text-decoration: none;"
+												target="_blank">BWF</a></li>
+										<li><a href="bai_player_id_form.pdf" style="text-decoration: none;"
+												target="_blank">BAI</a></li>
+										<li><a href="mpba_player_id_form.pdf" style="text-decoration: none;"
+												target="_blank">MPBA</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a id="sj" class="test" tabindex="-1" href="#">Guidelines<span
+											class="caret"></span></a>
+									<ul id="sjh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+										<li><a href="http://bwfcorporate.com/players/entries/"
+												style="text-decoration: none;" target="_blank">BWF</a></li>
+										<li><a href="bai_guidelines.pdf" style="text-decoration: none;"
+												target="_blank">BAI</a></li>
+										<li><a href="mpba_guidelines.pdf" style="text-decoration: none;"
+												target="_blank">MPBA</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Players Ranking<span
+									class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="http://bwfbadminton.com/rankings/" target="_blank">BWF</a></li>
+								<li><a href="http://www.badmintonindia.org/players/rankings/senior/		"
+										target="_blank">BAI</a></li>
+								<li><a href="#">MPBA</a></li>
+								<li><a href="#">Historical Ranking</a></li>
+							</ul>
+						</li>
+
+						<li><a href="gallery.html">Gallery</a></li>
+
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Organizations<span
+									class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<!-- <li><a href="executive_members.html">Council</a></li> -->
+								<li><a href="organizations.html">Affiliated Organizations</a></li>
+								<li><a href="#">Constitutions</a></li>
+								<li><a href="handbook_II_laws_of_badminton_bwf.pdf" target="_blank">Laws Of
+										Badminton</a></li>
+							</ul>
+						</li>
+
+
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Anti-Doping<span
+									class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="http://www.wada-ama.org/en/" target="_blank">World Anti-doping Agency
+										(WADA)</a></li>
+								<li><a href="http://www.wada-ama.org/en/Education-Awareness/" target="_blank">WADA
+										Education and Awareness</a></li>
+								<li><a href="http://www.wada-ama.org/en/ADAMS/" target="_blank">ADAMS and
+										Whereabouts</a></li>
+								<li><a href="http://www.bwfbadminton.org/page.aspx?id=15524" target="_blank">BWF
+										Anti-Doping Regulations</a></li>
+							</ul>
+						</li>
+
+						<li class="dropdown">
+							<a id="tour" class="dropdown-toggle" data-toggle="dropdown" href="#">Tournaments<span
+									class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-submenu">
+									<a id="ss" class="test" tabindex="-1" href="#">Upcoming Tournaments<span
+											class="caret"></span></a>
+									<ul id="ssh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+										<li><a href="http://badmintonindia.org/events/tournaments/international-2018/"
+												style="text-decoration: none;" target="_blank">International</a></li>
+										<li><a href="http://badmintonindia.org/events/tournaments/domestic-2018/"
+												style="text-decoration: none;" target="_blank">National</a></li>
+										<li><a href="Circular_bhopal_2018.pdf" style="text-decoration: none;"
+												target="_blank">State</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a id="js" class="test" tabindex="-1" href="#">Completed Tournaments/Results<span
+											class="caret"></span></a>
+									<ul id="jsh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+										<li><a href="http://bwfbadminton.com/results/3163/gwangju-victor-korea-masters-2017/podium/"
+												style="text-decoration: none;" target="_blank">International</a></li>
+										<li><a href="http://badmintonindia.org/events/results/2017/"
+												style="text-decoration: none;" target="_blank">National</a></li>
+										<li><a href="#" style="text-decoration: none;">State</a></li>
+									</ul>
+								</li>
+
+
+
+
+								<!-- <li class="dropdown-submenu">
+							<a id = "ss"  class="test" tabindex="-1" href="#">Senior State 2017 Jabalpur & Satna<span class="caret"></span></a>
+							<ul id = "ssh"class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+								<li><a href="Circular_draws_result_jabalpur_2017.pdf" style="text-decoration: none;" target="_blank">Jabalpur Senior State Circular, Draws & Results</a></li>
+								<li><a href="Circular_draws_satna_results_2017.pdf" style="text-decoration: none;" target="_blank">Satna Senior State Circular, Draws & Results</a></li>
+							</ul>
+						</li>
+						<li  class="dropdown-submenu">
+							<a id = "js"class="test" tabindex="-1" href="#">Junior State 2017 Mandla<span class="caret"></span></a>
+							<ul id = "jsh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+								<li><a href="Circular_draws_Mandla_2017.pdf" style="text-decoration: none;" target="_blank">Mandla Junior State Circular, Draws</a></li>
+							</ul>
+						</li>	
+						<li  class="dropdown-submenu">
+							<a id = "sj" class="test" tabindex="-1" href="#">Sub-Junior State 2017 Katni, Singrauli & Gwalior<span class="caret"></span></a>
+							<ul id = "sjh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+								<li><a href="Circular_draws_result_katni_2017.pdf" style="text-decoration: none;" target="_blank">Katni Sub-Junior State Circular, Draws & Results</a></li>
+								<li><a href="Circular_draws_Sub_Junior_Singrauli_2017.pdf" style="text-decoration: none;" target="_blank">Singrauli 2nd Sub-Junior State Circular, Draws</a></li>
+								<li><a href="Circular_draws_sub_junior_Gwalior_2017.pdf" style="text-decoration: none;" target="_blank">Gwalior 3rd Sub-Junior State Circular</a></li>
+							</ul>
+						</li> -->
+							</ul>
+
+						</li>
+
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div id="slider">
+			<div style="height:274px;margin-bottom: -55px; margin-top: 0px;">
+				<div id="outerbox">
+					<figure>
+						<img src="images/saina1_0.jpg" / " style=" width: 500px;height: 260px;">
+						<img src="images/live-badminton-score-759.jpg" style="width:500px;height: 260px">
+						<img src="images/39687-fmtmqkylek-1471508235.JPG" style="width: 500px;height: 260px;">
+						<img src="images/WhatsApp Image 2017-08-08 at 10.13.02 AM.jpeg"
+							style="width: 500px;height: 260px;">
+						<img src="images/download.jpg" style="width: 634px;height: 260px;">
+						<!-- width="1000px;" height="250px;" style="margin-top: -10px;" -->
+					</figure>
+				</div>
+			</div>
+		</div>
+
+		<div style="margin-top: -40px;">
+			<!-- <marquee style="font-size: 27px;margin-top: -8px;" scrollamount="Fo7">***Upcoming Tournament:- Inter District & 72 Senior State Badminton Championship 2017 at Jabalpur***</marquee> -->
+
+			<!-- 
+ <div id = "tick" class="ticker-container" >
+<div class="ticker-caption">
+	<p>Upcoming Tournament</p>
+</div>
+ <marquee style="font-size: 20px">***  Inter District & 72 Senior State Badminton Championship 2017 at Jabalpur***</marquee>
+
+</div>  -->
+			<br>
+			<!-- <div >
+ <marquee id = "mar"  style="font-size: 20px;font-family: serif;color: rgba(65, 0, 255, 0.67);><a href="http://www.tournamentsoftware.com/sport/draws.aspx?id=78941723-5205-45FD-A1A7-7B59311A78CB" target="_blank" style="text-decoration: none;" >***Important Notice :- Draws will upload soon***</a></marquee>
+
+</div>  -->
+			<div>
+				<marquee id="mar" style="font-size: 20px;font-family: serif;color: rgba(65, 0, 255, 0.67);"
+					onmouseover="this.stop()" onmouseout="this.start()">
+					<!-- <span style="color:black">***Singrauli Draws:- </span>
+<a href="Circular_draws_Sub_Junior_Singrauli_2017.pdf
+" target="_blank" style="text-decoration: none;">Main Draws 2nd Sub Junior State Badminton Championship 2017 at Singrauli 09 Nov.2017-12 Nov.2017</a> -->
+
+					<!-- <span style="color:black">***Player List:- </span>
+<a href="Player_List_Gwalior_Sub_Junior 2017.pdf" target="_blank" style="text-decoration: none;">Player List for Sub Junior State Badminton Championship 2017 at Gwalior 27 Dec.2017-30 Dec.2017</a> -->
+
+					<span style="color:black">***Upcoming Tournament:- </span>
+					<a href="Circular_bhopal_2018.pdf" target="_blank" style="text-decoration: none;">Circular of 2nd
+						Master Veteran State Badminton Championship 2018 at Bhopal 27 Jan.2018-30 Jan.2018</a>
+
+					<!-- <span style="color:black">***Upcoming Tournament:- </span>
+<a href="Circular_draws_sub_junior_Gwalior_2017.pdf" target="_blank" style="text-decoration: none;">Circular of 3rd Sub Junior State Badminton Championship 2017 at Gwalior 27 Dec.2017-30 Dec.2017</a> -->
+
+
+					<span style="color:black">***State Player Id's:- </span>
+					<a href="Player_Id_201_Publish.pdf" target="_blank" style="text-decoration: none;">Players can check
+						their State Id's</a>
+
+					<span style="color:black">***Congratulations to Players and Coach:- </span>
+					<a href="http://www.tournamentsoftware.com/sport/matches.aspx?id=0852CB11-7C4C-4409-8F3C-E2E83BC47166"
+						target="_blank" style="text-decoration: none;">First time in the history of M.P. Badminton Team
+						Championship, M.P. Runner-up in finals of 73rd Inter State Inter Zonal Badminton Championships
+						2017 at Nagpur, Maharashtra</a>
+
+					<span style="color:black">***Congratulations :-</span><span>&nbsp;Shriyanshi Pardesi of Madhya
+						Pradesh became the India No. 1</span>
+
+					<br><br>
+				</marquee>
+			</div>
+		</div>
+
+		<div class="col-md-12 wrap1" style="overflow: auto;margin-top:-64px;width: 100%">
+			<div class="col-md-12 content1">
+				<u>
+					<h2 style="margin-left: 15px;">Badminton Origin</h2>
+				</u>
+				<div class="content111">
+					<p class="col-md-12 transbox">
+						<b>The game of Badminton can be traced back about 2000 years to ancient China and Egypt. The
+							modern version is a descendent of the ancient game of Battledore and Shuttlecock which was a
+							leisurely pastime in which players counted the number of hits and tried to keep the
+							shuttlecock in the air as much as possible.</b>
+					<p class="col-md-12"><b>In the 19th century, a similar game was played in India by British Military
+							officers called "Poona" as the first rules were framed there. Some of these officers, while
+							on leave in England, introduced this game to the Duke of Beaufort in 1873, at his country
+							house, 'Badminton' in Gloucestershire.
+							The Duke popularised the game all over England and the game became known as 'Badminton' all
+							over the world. Formal rules were drawn up when the Badminton Association of England was
+							formed in 1893 and an international body named International Badminton Federation was formed
+							in 1934. The IBF has 131 member countries as on date. </b></p>
+					</p>
+
+
+					<u>
+						<h2 style="margin-left: 15px;color: #333">Evolution</h2>
+					</u>
+					<p class="col-md-12">
+						<b>From what was disparagingly called a "pregnant ladies' pastime, Badminton has become the
+							fastest racquet sport and one of the toughest of all individual games in the world. The
+							shuttle travels at speeds close to 200 mph. It became an Olympic discipline at Barcelona
+							1992 and was incidentally the most watched of all Olympic disciplines thanks to huge
+							viewer-ship in China and India. At a study conducted by sports scientists at the olympic
+							training centre in Colorado Springs in USA, it was found that a top Badminton player
+							required the aerobic capability of an elite 10000m runner and the explosiveness of an elite
+							volleyballer. This means combining two very diverse qualities and it was also observed that
+							the game required training close to 90% of maximum capacity for prolonged periods of time.
+						</b>
+					</p>
+					<p class="col-md-12"><b>Badminton is one game which requires a lot of twisting and turning, running
+							front and back and jumping in a very confined space. This is a very tiring activity indeed.
+							Since the number of overhead strokes and underhand strokes are balanced and intermittent,
+							the heart has to pump blood up and down much more than in the case of other racquet games
+							where the strokes are mostly at the hip level e.g. tennis, squash, table tennis. <p
+								class="col-md-12"><b>
+									However, this game, despite its obvious merits, still remains one which people like
+									to play, yet prefer not to watch, especially on TV. This is partly because of the
+									poor quality of telecast even now. One of the reasons for this is the extreme speed
+									with which the game is played, which in turn makes it very difficult for the TV
+									cameras to follow the shuttle.
+									The change in trajectory of the shuttle, from inches close to the ground to as high
+									as 30 feet in the air in a matter of milliseconds makes the cameraman's job doubly
+									difficult. Absence of time gap between rallies makes replay of interesting points
+									nearly impossible, as replays cut into the live coverage of the ensuing point.</b>
+							<p class="col-md-12"><b>
+									Lack of saleable personalities also affects viewer-ship as the game is dominated by
+									Chinese and Indonesians who barely speak English. This domination by Asians have
+									also prevented the United States of America from entering Badminton in a big way as
+									they do not see it as a potential medal sport. As you know, US entry into any game
+									has a sort of cascade effect on it -bringing in more prize money, sponsorships,
+									players and overall popularity. As such, despite the best efforts of the IBF, a top
+									Badminton player's earning in prize money or sponsorship is still a pittance
+									compared to the earnings of a top tennis player or golfer.</b>
+							</p>
+
+							<u>
+								<h2 style="margin-left: 15px;color: #333">Present Status</h2>
+							</u>
+							<p class="col-md-12">
+								The IBF is seized of the situation and is doing whatever it can to make the game
+								interesting and TV friendly. In an effort to do this, they are progressively bringing in
+								a lot of changes to the game's format:
+								They have permitted coloured clothing for the players with the players' names emblazoned
+								behind. Permitted 90 seconds break between the first and second games to enable coaches
+								to speak to players and also to enable commercial break time of fixed duration.
+								Simplifying the rules by allowing setting only when the scores are tied at 14 all
+								instead of at 13 all and at 14 all.
+							</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrap21 col-md-12">
+			<!-- <div class=""> -->
+			<h2 style="text-align: center;">OUR SPONSORS</h2>
+			<p class="col-md-8"><b>Affiliated District Associations:</b><br>
+				Ashoknagar, Alirajpur, Balaghat, Betul, Bhopal, Chhatarpur, Chhindwara, Datia,
+				Dewas, Dhar, Gwalior, Hoshangabad, Indore, Jabalpur, Katni,
+				Khandwa, Khargone, Mandla, Mandsaur, Neemach, Raisen, Rajgarh,
+				Ratlam, Rewa, Sagar, Satna, Sehore, Seoni, Shajapur, Shivpuri
+			</p>
+			<img id="sponsor" class=" col-md-4" src="images/bbd-logo.jpg" style="margin: 0px;">
+			<br>
+		</div>
+	</div>
+
+	<!-- 	<div class="wrap31" style="margin-top: -2px;">
+		<div class="footer">Copyright © 2017 MPBA. All rights reserved.&nbsp;|&nbsp;&nbsp;&nbsp;Developed By: Rishabh, Harshit
+		</div>
+	</div> -->
+
+	<!--   <div class="wrap31 col-md-12" style="margin-top: -2px; background-color: #b6d4ba">
+ <b> <div class="footer">Copyright © 2017 MPBA. All Rights Reserved.&nbsp;|&nbsp;&nbsp;&nbsp;Developed By: Rishabh, Harshit</div></b>
+</div> -->
+	<!-- <br> -->
+	<div align="center" style="background-color: #b6d4ba;border-radius: 8px;margin-top: 6px
+">
+		<b>Copyright © 2021 MPBA. All Rights Reserved.
+			<!-- | Developed By: Rishabh & Harshit --></b>
+	</div>
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-103651154-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<html>
+    <head>
+    <title> Admin</title>
+      <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+       
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://cdn.datatables.net/1.10.7/css/jquery.dataTables.css">
+    </head>
+    <body>
+      
+        <div ng-app="AngularWayApp" ng-controller="AngularWayCtrl">
+            <br>
+          <!--   <a href = "/users/downloaduserdata" align = "center">Download Data</a> -->
+         <!-- <button type="button" id = "dow" ng-show="downloadbtn" ng-click="SendData()" class="btn btn-default">Download csv</button> -->
+          <button type="button"onclick="print()" class="btn btn-default">Print</button>
+            <button type="button" ng-click="logout()" class="btn btn-default">Logout</button>
+            <p>Loading may slow please wait</p>
+          <!-- <button type="button"onclick="location.href='/#/logout'" class="btn btn-default">Logout</button> -->
+        
+            <br>
+            <br>
+            <table  id="printTable" datatable="ng" class="table">
+               <thead>
+                                    <tr>
+                                        <th>First name</th>
+                                        <th>Middle name</th>
+                                        <th>Last name</th>
+                                        <th>District</th>
+                                        <th>Gender</th>
+                                        <th>email</th>
+                                          <th>Contact</th>
+                                         <th>Description</th>
+                                        <th>Delete</th>
+                                        <th>Date & Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                     <tr class="w3-hover-blue" ng-repeat="x in names | unique : '_id'">
+   
+                                        <td>{{ x.fname }}</td>
+                                        <td>{{ x.mname }}</td>  
+                                        <td>{{ x.lname }}</td>
+                                        <td>{{x.district}}</td>
+                                        <td>{{x.gender}}</td>
+                                         <td>{{x.email}}</td>
+                                        <td>{{x.contact}}</td>
+                                        <td>{{x.description}}</td>
+                                        
+
+                                     <td><a ng-href ="/delete/{{x._id}}">Delete</a></td>
+                                    
+                                         <td>{{fun(x._id)}}</td>
+                                      </tr>
+                                   
+                                </tbody>
+            </table>
+
+            <script>
+
+                var app = angular.module('AngularWayApp', ['datatables']);
+
+
+
+
+
+
+
+
+
+
+
+
+           app.filter('unique', function() {
+                  return function(collection, primaryKey) { //no need for secondary key
+                    var output = [], 
+                        keys = [];
+                        var splitKeys = primaryKey.split('.'); //split by period
+
+
+                    angular.forEach(collection, function(item) {
+                          var key = {};
+                          angular.copy(item, key);
+                          for(var i=0; i<splitKeys.length; i++){
+                              key = key[splitKeys[i]];    //the beauty of loosely typed js :)
+                          }
+
+                          if(keys.indexOf(key) === -1) {
+                            keys.push(key);
+                            output.push(item);
+                          }
+                    });
+                    return output;
+                  };
+              });
+
+
+                app.controller('AngularWayCtrl', function($scope, $http ,$window)
+                {
+
+
+
+
+
+                    $scope.print = function(){
+                     window.print();
+                    }
+                    $scope.fun = function(x){
+                      timestamp = x.toString().substring(0,8)
+                      return new Date( parseInt( timestamp, 16 ) * 1000 ).toString().split("G")[0].substring(3);
+                    }
+                    
+
+                  if(localStorage.getItem('login') === "true"){
+                  //  alert("success")
+                  }
+                  else{
+                     window.location.assign("/login")
+                  }
+                    $scope.logout = function () {
+                       $window.localStorage.removeItem('login');
+                          
+                            window.location.assign("/")
+                      
+                  }
+
+
+
+/*
+            function urlBase64Decode(str) {
+                  var output = str.replace('-', '+').replace('_', '/');
+                  switch (output.length % 4) {
+                      case 0:
+                          break;
+                      case 2:
+                          output += '==';
+                          break;
+                      case 3:
+                          output += '=';
+                          break;
+                      default:
+                          throw 'Illegal base64url string!';
+                  }
+                  return window.atob(output);
+              }
+              function getUserFromToken(ss) {
+                  var token = ss;
+                  var user = {};
+                  if (typeof token !== 'undefined') {
+                      var encoded = token.split('.')[1];
+                      user = JSON.parse(urlBase64Decode(encoded));
+                  }
+                  return user;
+              }
+*/
+
+
+
+
+                    if(localStorage.getItem('login') === "true"){
+                     // var parameter = JSON.stringify(getUserFromToken(localStorage.getItem('token')));
+                       // $http.defaults.headers.common['x-access-token'] = localStorage.getItem('token');
+                            $http.post("/getalldata",{}).success(function (response)
+                            {
+                                $scope.names = response;
+                            });
+                               }
+                          else{
+                                       window.location = "/login";
+                              }
+
+
+
+                });
+            </script>
+             <script src="angular-datatables.min.js"></script>   
+        </div>
+    </body>
+</html>

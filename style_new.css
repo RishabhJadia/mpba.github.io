@@ -1,0 +1,422 @@
+.margi{	
+	margin: 0px;
+	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/*background-color: #cccccc;*/
+}
+.back{
+	
+
+}
+body{
+	/*background: url("images/main-bg-red.jpg")no-repeat;
+   -webkit-background-size:cover;
+	  background-size:cover;*/
+	/*background: url("images/23Kidambi-Srikanth-1.jpg")no-repeat;
+   -webkit-background-size:cover;
+	  background-size:cover;*/
+	background-color: grey;
+	margin: 0px;
+	padding: 0px;
+}
+.wrap{
+	/*border: 1px solid red;*/
+	background-color: grey;
+	
+	/*width:1000px;*/
+	height: 152px;
+	margin: auto;
+	border-radius:40px;
+	text-align: justify;
+}
+.wrap img{
+	/*border: 1px solid black;*/
+	float: left;
+	height:151px;
+	margin: auto;
+	padding: 2px;
+	border-radius:38px;
+	margin-top:0px;
+	clear: both;
+}
+
+
+
+   
+
+
+
+
+.header{
+	border: 2px solid black;
+/*	background-color: antiquewhite;*/
+	/*border-radius:38px;*/
+	background: url("images/badminton-71a074fc6747e1ee7b11e3ad6cc39155.jpg")no-repeat;
+   -webkit-background-size:cover;
+	  background-size:cover;
+	background-position: center;
+	width: 100%;
+	height: 102%;
+	margin: auto;
+	text-align: center;
+	position:relative;
+	line-height: 25px;
+	font-family: sans-serif;
+	clear: both;
+	/*margin-left: 175px;*/
+
+}
+
+.wrap0{
+	border: 1px solid black;
+	background-color: grey;
+	/*width:1000px;*/
+	height: 152px;
+	margin: auto;
+	text-align: justify;
+}
+.header1{
+	padding-left:7px;
+	
+}
+
+/*ul{
+	line-height: 112px;
+	position: absolute;
+	clear: both;
+}
+ul li{
+	background-color: green;
+	font-size: 14px;
+	font-family: sans-serif;
+	font-weight: bold;
+	display: inline;
+	margin: auto;
+	border-radius:7px;
+	float: left;
+}
+ul li a{
+	color: white;
+	text-decoration: none;
+	padding: 64px;	
+	clear: both;
+}
+ul li a:hover{
+	
+	text-decoration: underline;
+	clear: both;	
+}*/
+.wrap1{
+	/*overflow: auto;*/
+	border: 2px solid black;
+	background-color: yellowgreen;
+	background: url("images/badminton-05.jpg")no-repeat;
+   -webkit-background-size:cover;
+	  background-size:cover;
+/*	width:1000px;*/
+	height: 100%;
+	margin: auto;
+    margin-top: -9px;
+    text-align: justify;
+ /*   margin-left: 175px;*/
+}
+.content{
+	margin-top:20px;
+	/*clear: both;*/
+	
+}
+.wrap12{
+	overflow: auto;
+	border: 2px solid black;
+	background-color: yellowgreen;
+/*	width:1000px;*/
+	height: 100%;
+	margin: auto;
+	margin-top: -9px;
+	text-align: justify;
+/*	margin-left: 175px;*/
+	
+}
+.content12{
+	margin-top:20px;
+	
+}
+.wrap2{
+	border: 2px solid black;
+	/*background-color: grey;*/
+	width:100%;
+	height: 100%;
+	margin: auto;
+	/*margin-top: -1px;*/
+	text-align: justify;
+	overflow: auto;
+	/*margin-left: -2px;*/
+	
+}
+.wrap3{
+	border: 2px solid black;
+	/*background-color: yellow;*/
+/*	width:1000px;*/
+	height: 100%;
+	margin: auto;
+	margin-top: -2px;
+/*	margin-left: 175px;*/
+	text-align: justify;
+	overflow: auto;
+}
+.footer{
+	background-color: lightgrey;
+	text-align: center;
+	height: 50px;
+	margin: auto;
+	line-height: 50px;
+	
+}
+.wrap11{
+	overflow: auto;
+	border: 2px solid black;
+	background-color: yellowgreen;
+/*	width:1000px;*/
+	height: 100%;
+	margin: auto;
+    margin-top: -9px;
+    text-align: justify;
+    /*margin-left: 175px;*/
+    background: url("images/main-bg-red.jpg")no-repeat;
+   -webkit-background-size:cover;
+	  background-size:cover;
+}
+	
+.content11{
+	font-size: 22px;
+	font-family: sans-serif;
+	margin: 25px;
+	margin-top: 6px;
+	/*background: url("images/main-bg-red.jpg")no-repeat;
+   -webkit-background-size:cover;
+	  background-size:cover;*/
+	
+
+	/*clear: both;*/
+	
+}
+.button{
+	margin:auto;
+	display:block;
+ 
+}
+.form{
+	text-align: center;
+	font-family: 'Bitter', serif;
+	font-size: 25px;
+}
+.image{
+	background: url("images/badminton-05.jpg")no-repeat;
+   -webkit-background-size:cover;
+	  background-size:cover;
+	overflow: auto;
+	
+	background-color: yellowgreen;
+/*	width:1000px;*/
+	height: 100%;
+	margin: auto;
+	margin-top: -9px;
+	/*margin-left: 175px;*/
+	text-align: center;
+}
+.image11{
+	/*font-size: 22px;
+	font-family: sans-serif;
+	margin: 25px;*/
+	margin-top: 16px;
+	margin-bottom: 8px;
+
+	
+}
+.wrap1{
+	background: url("images/badminton-05.jpg")no-repeat;
+   -webkit-background-size:cover;
+	  background-size:cover;
+}
+.wrap12{
+	/*border: 1px solid black;
+	background-color: grey;
+	width:1000px;
+	height: 152px;
+	margin: auto;
+	text-align: justify;*/
+	background: url("images/badminton-05.jpg")no-repeat;
+   -webkit-background-size:cover;
+	  background-size:cover;
+}
+/*.header12{
+	
+}*/
+.list{
+	background: url("images/badminton-05.jpg")no-repeat;
+   -webkit-background-size:cover;
+	  background-size:cover;
+	border: 2px solid black;
+	background-color: grey;
+/*	width:1000px;*/
+	height: 100%;
+	margin: auto;
+	/*margin-left: 175px;*/
+    margin-top: -9px;
+	text-align: center;
+}
+.list1{
+	padding-left: 7px;
+}
+
+table, th, td{
+	border:2px solid black;
+	border-collapse: collapse;	
+	overflow:auto;
+}
+th, td{
+	padding: 8px;
+	text-align: center;
+	overflow:auto;
+}
+.oo{
+	width: 90%;
+	margin: auto;
+}
+/*.nav{
+	
+	margin: auto;
+	
+	font-size:40px;
+	text-align:center;
+}
+.navbar{
+	background: url("images/main-bg-red.jpg")no-repeat;
+   -webkit-background-size:cover;
+	  background-size:cover;
+	border: 2px solid black;
+	background-color: #00f3ff;
+	margin: auto;
+	margin-top: 5px;
+	
+}*/
+a:hover {
+	background-color: orange;
+	
+}
+/*#nav11{
+	padding: -2px;
+	line-height: 64px;
+	
+	height: 88%;
+}*/
+.content111{
+	/*width: 730px;*/
+/*	margin-left: 30px;*/
+	color: mediumblue;
+}
+.sponsors{
+	
+	/*text-align: right;*/
+}
+.wrap21{
+	border: 2px solid black;
+    background-color: ghostwhite;
+    /*width: 1000px;*/
+    height: 100%;
+    margin: auto;
+    margin-top: -2px;
+    text-align: justify;
+    overflow: auto;
+  /*  margin-left: 175px;*/
+}
+.wrap211{
+	/*margin-left: -2px;*/
+}
+.wrap31{
+	border: 2px solid black;
+    /* background-color: yellow; */
+/*    width: 1000px;*/
+    height: 100%;
+   /* margin: auto;*/
+  /*  margin-top: -2px;*/
+   /* margin-left: 175px;*/
+    text-align: justify;
+   /* overflow: auto;*/
+   /* margin-bottom: -2px;*/
+}
+#outer/box{
+	width: 1000px;
+	height: 259px;
+	overflow: hidden;
+	margin-top:-11px;
+}
+/*#sliderimages{
+	width: 1000px;
+	position: relative;
+	animation-name:abc;
+	animation-duration:5s;*/
+	/*margin-top: -1px;*/
+	/*height: 360px;*/
+	/*animation-name:mpba;
+	animation-duration:20s;*/
+/*}*/
+/*#Sliderimage img{*/
+	/*width: 1000px;*/
+	/*float: left;*/
+	/*margin-top: -1px;*/
+	/*height: 360px;*/
+	
+/*}	*/
+#outerbox{
+	overflow: hidden;
+	/*margin-top: 0px;*/
+	position: relative;
+	top:-20px;
+	
+}
+#outerbox figure img{
+	float: left;
+}
+#outerbox figure{
+	position: relative;
+	margin: 0;
+	left: 0;
+	text-align: left; 
+	width: 500%;
+	font-size: 0;
+	animation : 20s outerbox infinite;
+	margin-top: -20px;
+}
+
+@keyframes outerbox{
+	0%{
+		left: 	0px;	
+	}
+	20%{		
+		left: 	0px;
+		
+	}
+	25%{
+		left: -100%;
+	}
+	45%{
+		left: -100%;
+	}
+	50%{
+		left: -100%;
+	}
+	100%{
+		left: -50%;
+	}
+	/*75%{
+		left: -300%;
+	}
+	95%{
+		left: -100%;
+	}
+	100%{
+		left: 400%;*/
+	}
+}

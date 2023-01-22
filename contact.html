@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Official MPBA Website</title>
+
+	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+	<meta http-equiv="Content-Type" e="text/html;charset=utf-8">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet"> -->
+
+	 <meta name="description" content="In MADHYA PRADESH we have extremely talented badminton players and we have great badminton minds and coaches">
+	<meta name="keywords" content="MPBA,MADHYA PRADESH Badminton,mpba,Badminton,madhya pradesh badminton">
+	<meta name="author" content="Rishabh,Harshit">
+ 
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+<link rel="stylesheet" type="text/css" href="ticker.css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src = "jquery.js"></script>
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>  -->
+<script src="ticker.js"></script>
+<script src="myjs.js"></script>
+<!--   <script src = "fittext.js"></script> -->
+<!-- <script type="text/javascript">
+	$(document).ready(function(){
+		
+				$("#mar").hide();
+
+});
+</script>  -->
+<style type="text/css">
+
+
+
+	.navbar-default {
+		background-color: #F8F8F8;
+		border-color: #E7E7E7;
+}
+
+/* Title */
+.navbar-default .navbar-brand {
+		color: #777;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+		color: #5E5E5E;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+		color: #777;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+		color: #333;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+		color: #555;
+		background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+		color: #555;
+		background-color: #D5D5D5;
+}
+/* Caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+		border-top-color: #777;
+		border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+		border-top-color: #333;
+		border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+		border-top-color: #555;
+		border-bottom-color: #555;
+}
+/* Mobile version */
+.navbar-default .navbar-toggle {
+		border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+		background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+		background-color: #CCC;
+}
+@media (max-width: 767px) {
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+				color: #777;
+		}
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+					color: #333;
+		}
+}
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+</style>
+</head>
+<body>
+<script>
+window.addEventListener('resize', change);
+
+
+function change(){
+
+
+if(window.innerWidth<=700){
+
+document.getElementById("head").style.fontSize = "15px";
+document.getElementById("slider").style.display = 'none';
+document.getElementById("sponsor").style.width = '350px';
+document.getElementById("logo").style.width = '43%';
+
+/*document.getElementById("tick").style.display = 'none';
+document.getElementById("mar").style.display = 'block';
+
+*/
+}
+else{
+document.getElementById("head").style.fontSize = "36px";
+document.getElementById("slider").style.display = 'block';
+document.getElementById("logo").style.width = '13%';
+/*
+document.getElementById("mar").style.display = 'none';
+document.getElementById("tick").style.display = 'block';*/
+}
+}
+
+$(document).ready(function(){
+	 change();
+/*document.getElementById("sponsor").style.width = '40%';
+document.getElementById("sponsor").style.height = '40%';*/
+});
+
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+
+
+</script>
+
+<!-- <div class = "col-md-2 back">
+	</div> -->
+
+<div class= "col-md-12 margi">
+	<div class="wrap margi" >
+		<div class="header container-fluid">
+			<img  id = "logo" src="logo.png">
+			<br>
+				<h1 id="head" style="color:red;">
+				<b>MADHYA PRADESH BADMINTON ASSOCIATION</b></h1>
+		</div>
+	</div>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+		 <!--  <a class="navbar-brand" href="#">WebSiteName</a> -->
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="registration.html">Registration</a></li>
+
+				<!-- <li class="dropdown">
+					<a class="dropdown-toggle expand" data-toggle="dropdown"  href="#">Players<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					 <li><a href="http://www.badmintonindia.org/players/bai-player-id/" target="_blank">Players BAI ID(Search Last Name Followed By First Name)</a></li>
+			 <li><a href="registration_new1.pdf" target="_blank">BAI players ID Form</a></li>
+						<li><a href="http://www.badmintonindia.org/players/bwf-player-id/" target="_blank">Indian Players BWF ID</a></li>
+					 
+					 <li><a href = "BWF_FORM.pdf"  target="_blank">BWF players ID Form</a></li>
+					 <li><a href = "Player_Id_201_Publish.pdf"  target="_blank">State players ID</a></li>
+					 <li><a href = "ID_MPBA_Player_ID_Form.pdf"  target="_blank">State Players ID Form</a></li>
+					 <li><a href = "mpba_players_id_circular.jpg"  target="_blank">Mpba Players ID Circular</a></li>
+					 <li><a href = "Draft_to_State_Associations_on_BAI_ID_to_prevent_Age_Fraud.pdf"  target="_blank">Prevent Age Fraud</a></li>
+					</ul>
+				</li> -->
+
+				<li class="dropdown">
+					<a id="tour" class="dropdown-toggle expand" data-toggle="dropdown"  href="#">Players<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-submenu">
+							<a id = "ss"  class="test" tabindex="-1" href="#">Players Id<span class="caret"></span></a>
+							<ul id = "ssh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+								<li><a href="http://www.badmintonindia.org/players/bwf-player-id/" style="text-decoration: none;" target="_blank">BWF (Search Last Name Followed By First Name)</a></li>
+								<li><a href="http://www.badmintonindia.org/players/bai-player-id/" style="text-decoration: none;" target="_blank">BAI (Search Last Name Followed By First Name)</a></li>
+								<li><a href="mpba_player_ids.pdf" style="text-decoration: none;" target="_blank">MPBA(Updated till 31 August 2019)</a></li>
+							</ul>
+						</li>
+						<li class="dropdown-submenu">
+							<a id = "js" class="test" tabindex="-1" href="#">Players Id Form<span class="caret"></span></a>
+							<ul id = "jsh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+								<li><a href="BWF_FORM.pdf" style="text-decoration: none;" target="_blank">BWF</a></li>
+								<li><a href="bai_player_id_form.pdf" style="text-decoration: none;" target="_blank">BAI</a></li>
+								<li><a href="mpba_player_id_form.pdf" style="text-decoration: none;" target="_blank">MPBA</a></li>
+							</ul>
+						</li>
+						<li class="dropdown-submenu">
+							<a id = "sj"  class="test" tabindex="-1" href="#">Guidelines<span class="caret"></span></a>
+							<ul id = "sjh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+								<li><a href="http://bwfcorporate.com/players/entries/" style="text-decoration: none;" target="_blank">BWF</a></li>
+								<li><a href="bai_guidelines.pdf" style="text-decoration: none;" target="_blank">BAI</a></li>
+								<li><a href="mpba_guidelines.pdf" style="text-decoration: none;" target="_blank">MPBA</a></li>
+							</ul>
+						</li>
+						<li class="dropdown-submenu">
+									<a id="sjj" class="test" tabindex="-1" href="#">Players Ranking<span
+											class="caret"></span></a>
+									<ul id="sjhj" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+										<li><a href="Ranking_Sub_Junior_sep_2022.pdf" style="text-decoration: none;"
+												target="_blank">Sub-Juniors 2022</a></li>
+										<li><a href="Ranking_Junior_updated_july_2022.pdf" style="text-decoration: none;"
+												target="_blank">Juniors 2022</a></li>
+										<li><a href="Ranking_Senior_21_mar_2020.pdf" style="text-decoration: none;"
+												target="_blank">Seniors 2020</a></li>
+									</ul>
+								</li>
+					</ul>
+				</li>
+
+
+				<li class="dropdown">
+					<a id = "tour1" class="dropdown-toggle" data-toggle="dropdown" href="#">Tournaments<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-submenu">
+							<a id = "ss1"  class="test" tabindex="-1" href="#">Upcoming Tournaments<span class="caret"></span></a>
+							<ul id = "ssh1" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+								<li><a href="http://badmintonindia.org/events/tournaments/international-2018/" style="text-decoration: none;" target="_blank">International</a></li>
+								<li><a href="http://badmintonindia.org/events/tournaments/domestic-2018/" style="text-decoration: none;" target="_blank">National</a></li>
+								<li class="dropdown-submenu">
+									<a class="test" tabindex="-1">State<span class="caret"></span></a>
+									<ul id="ssh2" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+										<li>
+											<a href="Circular_Senior_indore_2022.pdf" style="text-decoration: none;" target="_blank">Circular Senior Indore 2022
+											</a>
+										</li>
+										<li>
+											<a href="circular_bhopal_sub_junior_2022.pdf" style="text-decoration: none;" target="_blank">Circular Junior Indore 2022
+													</a>
+											<a href="circular_bhopal_junior_2022_rehab..pdf" style="text-decoration: none;" target="_blank">Circular Junior Bhopal 2022
+											</a>
+											<!-- <a href="Circular_Junior_Mandla_2022.pdf" style="text-decoration: none;" target="_blank">Circular Junior Mandla 2022
+											</a> -->
+										</li>
+										<li>
+											<a href="circular_sub_junior_U13_15_2022.pdf" style="text-decoration: none;" target="_blank">Circular Sub-Junior Indore 2022
+											</a>
+										</li>
+										<li><a href="revised_mp_state_umpire_circular_2019.pdf" style="text-decoration: none;" target="_blank">State Umpire Exam Bhopal 2019</a></li>
+				                        <!-- result not uploaded yet -->
+				                        <!-- <li><a href="revised_circular_bhopal_sub_junior_2019.pdf" style="text-decoration: none;" target="_blank">Circular Sub Junior Bhopal 2019</a></li>
+										<li><a href="Circular_Senior_Indore_2019.pdf" style="text-decoration: none;" target="_blank">Circular Senior Indore 2019</a></li>
+										<li><a href="Circular_Junior_Singrauli_2019.pdf" style="text-decoration: none;" target="_blank">Circular Junior Singrauli 2019</a></li>
+
+										<li><a href="M&Q_Dewas_sub_junior_2019.pdf" style="text-decoration: none;" target="_blank">M&Q Dewas 2019</a></li> -->
+										<!-- <li><a href="Circular_Sub_Junior_Dewas_2019.pdf" style="text-decoration: none;" target="_blank">Circular Sub-Junior Dewas 2019</a></li> -->
+										<!-- <li><a href="players_selected_for_senior_national_guwahati_2019.jpg" style="text-decoration: none;" target="_blank">Circular and Selected Players for Senior Nationals Guwahati 2019</a></li>
+										<li><a href="players_selected_for_junior_national_guwahati_2019.jpg" style="text-decoration: none;" target="_blank">Circular and Selected Players for Junior Nationals Guwahati 2019</a></li> -->
+										<li><a href="Important_Note.pdf" style="text-decoration: none;" target="_blank">Dhar Tournament Notice 2018</a></li>
+										<li><a href="Circular_junior_dhar_2018.pdf" style="text-decoration: none;" target="_blank">Circular Junior Dhar 2018</a></li>
+									</ul>
+							</ul>
+						</li>
+						<li class="dropdown-submenu">
+							<a id = "js1"  class="test" tabindex="-1" href="#">Completed Tournaments/Results<span class="caret"></span></a>
+							<ul id = "jsh1" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+								<li><a href="http://bwfbadminton.com/calendar/2018/completed/" style="text-decoration: none;" target="_blank">International</a></li>
+								<li><a href="http://badmintonindia.org/events/results/2017/" style="text-decoration: none;" target="_blank">National</a></li>
+								<li class="dropdown-submenu">
+									<a href="#" class="test" tabindex="-1">State<span class="caret"></span></a>
+									<ul id="jsh2" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+										<li><a href="summary_Result_bhopal_sub_junior_2022_1.pdf" style="text-decoration: none;" target="_blank">Bhopal (Sub Junior State Championship 2022)</a></li>
+										<li><a href="summary_Result_indore_junior_2021.pdf" style="text-decoration: none;" target="_blank">Indore (Junior State Championship 2021)</a></li>
+										<li><a href="summary_Result_katni_junior_2019.pdf" style="text-decoration: none;" target="_blank">Katni (Sub-Junior State Championship 2019)</a></li>
+
+										<li><a href="Summary_Result_Dewas_2019.pdf" style="text-decoration: none;" target="_blank">Dewas (Sub Junior State Championship 2019)</a></li>
+										<li><a href="#" style="text-decoration: none;" target="_blank">Chhindwara (Veteran State Championship 2018)</a></li>
+										<li><a href="Summary_Result_Mandsaur_2018.pdf" target="_blank">Mandsaur (3rd Sub Junior State Championship 2018)</a></li>
+										<li><a href="Summary_Result_Narsinghpur_2018.pdf" target="_blank">Narsinghpur (Junior State Championship 2018)</a></li>
+										<li><a href="Summary_Result_Gwalior_Sub_junior_2018.pdf" target="_blank">Gwalior (2nd Sub Junior State Championship 2018)</a></li>
+										<li><a href="Summary_Result_Bhopal_Senior_2018.pdf" target="_blank">Bhopal (Senior State Championship 2018)</a></li>
+										<li><a href="Summary_Result_Indore_Sub_Junior_2018.pdf" target="_blank">Indore (Sub-Junior State Championship 2018)</a></li>
+										<li><a href="Summary_Result_Bhopal_Veterans_2018.pdf" target="_blank">Bhopal (Veterans State Championship 2018)</a></li>
+					              		<li><a href="Summary_Result_Chhindwara_Junior_2017.pdf" target="_blank">Chhindwara (Junior State Championship 2017)</a></li>
+					              		<li><a href="Summary_Result_Jabalpur_Senior_2017.pdf" target="_blank">Jabalpur (Senior State Championship 2017 )</a></li>
+					              		<li><a href="Summary_Result_Satna_Senior_2017.pdf" target="_blank">Satna (Senior State Ranking 2017)</a></li>
+					              		<li><a href="Summary_Result_Katni_Sub_Junior_2017.pdf" target="_blank">Katni (Sub-Junior State Championship 2017)</a></li>
+					              		<li><a href="Summary_Result_Mandla_Junior_2017.pdf" target="_blank">Mandla (Junior State Ranking 2017)</a></li>
+					              		<li><a href="Summay_Result_Singrauli_Sub_Junior_2017.pdf" target="_blank">Singrauli (1st Sub-Junior State Ranking 2017)</a></li>
+					              		<li><a href="Summary_Result_Gwalior_Sub_Junior_2017.pdf" target="_blank">Gwalior (2nd Sub-Junior State Ranking 2017)</a></li>
+					              		<li><a href="#" target="_blank">Bhopal (Veterans State Championship 2017 )</a></li>
+					            	</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown-submenu">
+									<a id="js2" href="mpba_calendar_22_23.pdf" target="_blank">Tournaments
+										Calendar 2022-2023</a>
+								</li>
+						<!-- <li class="dropdown-submenu">
+							<a id="js2" href="mpba_calendar_ 20-07-2019.pdf" target="_blank">Tournaments
+								Calendar 2019</a>
+						</li>-->
+					</ul>
+				</li>
+
+				<!-- <li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Players Ranking<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="http://bwfbadminton.com/rankings/" target="_blank">BWF</a></li>
+						<li><a href="http://www.badmintonindia.org/players/rankings/senior/		" target="_blank">BAI</a></li>
+						<li><a href="#">MPBA</a></li>
+						<li><a href="#">Historical Ranking</a></li>			
+					</ul>
+				</li> -->
+
+				<li><a href="gallery.html">Gallery</a></li>
+
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Organizations<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<!-- <li><a href="executive_members.html">Council</a></li> -->
+						<li><a href="organizations.html">Affiliated Organizations</a></li>
+						<li><a href="mpba_constitution.pdf" target="_blank">Constitutions</a></li>
+						<li><a href="handbook_II_laws_of_badminton_bwf.pdf" target="_blank">Laws Of Badminton</a></li>						
+					</ul>
+				</li>
+
+
+					<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Anti-Doping<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="http://www.wada-ama.org/en/" target="_blank">World Anti-doping Agency (WADA)</a></li>
+						<li><a href="http://www.wada-ama.org/en/Education-Awareness/" target="_blank">WADA Education and Awareness</a></li>
+						<li><a href="http://www.wada-ama.org/en/ADAMS/" target="_blank">ADAMS and Whereabouts</a></li>
+						<li><a href="http://www.bwfbadminton.org/page.aspx?id=15524" target="_blank">BWF Anti-Doping Regulations</a></li>
+					</ul>
+				</li>
+
+				<li class = "active">
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+ <div id = "slider">
+		<div style="height:300px;margin-bottom: -55px; margin-top: 0px;">
+			<div id="outerbox" >
+				<figure>
+					<img src="images/saina1_0.jpg"/ " style="width: 500px;height: 260px;">
+					<img src="images/live-badminton-score-759.jpg" style="width:500px;height: 260px">
+					<img src="images/39687-fmtmqkylek-1471508235.JPG" style="width: 500px;height: 260px;" >
+					<img src="images/WhatsApp Image 2017-08-08 at 10.13.02 AM.jpeg" style="width: 500px;height: 260px;" >
+					<img src="images/download.jpg" style="width: 634px;height: 260px;" >
+				<!-- width="1000px;" height="250px;" style="margin-top: -10px;" -->
+				</figure>
+			</div>
+		</div>
+	</div>
+
+
+
+<div class="wrap12" style="margin-top: 19px;">
+		<div class="content12">
+
+				<center style="padding: 13px;margin-top: -25px;">
+					<tr>
+						<td width="500" style="padding: 30px;">
+
+								<span style="color:#FF8C00;">
+									<font size= "6" face="Chaparral Pro">
+										<strong>Important Note :</strong>
+									</font>
+								</span>
+								<br>								
+								<span style="color:#fff;">
+									<font size = "4" face="Chaparral Pro" color="black">
+										<b>All Players are requested to submit their state player id form in the below address: </b><br>
+									</font>
+								</span>
+								<span style="color:#fff;">
+									<font size = "4" face="Chaparral Pro" color="black">
+										Shri Shishir Kant Khare,
+									</font>
+								</span><br>
+								<span style="color:#fff;">
+								<font size= "4" face="Chaparral Pro" color="black">Sai Puram Colony, Roshan Nagar,&nbsp;<br>Post-Science College, Katni - 483501, Madhya Pradesh&nbsp;<br>Mobile : 9165044772
+								</font>
+							</td>
+					</tr>				
+				</center> 
+				<br>
+
+				<center style="padding: 13px;margin-top: -25px;">
+					<tr>
+						<td width="500" style="padding: 30px;">
+								<span style="color:#FF8C00;">
+									<font size= "6" face="Chaparral Pro">
+									<!-- <br><br> -->
+										<b>Address: </b>
+									</font>
+								</span>
+								<br>
+								<span style="color:#fff;">
+									<font size = "4" face="Chaparral Pro" color="black">
+										Shri Anil Choughule Honorary Secretary,
+									</font>
+								</span><br> 
+								
+								<span style="color:#fff;">
+								<font size= "4" face="Chaparral Pro" color="black">97, Vasudeo Nagar, Indore – 452004,&nbsp;Madhya Pradesh, Phones : 07747830003,0731-2474708 &nbsp;&nbsp;<br>Mobile : 09425349444, 09826840085 &nbsp;<br>Email : secretarympba@gmail.com, choughuleanil@gmail.com
+								</font>
+						</td>
+					</tr>				
+				</center> 
+		</div>
+	</div>
+
+<div class="wrap21 col-md-12" style="margin-top: -2px;">
+		<!-- <div class=""> -->
+			<h2 style="text-align: center;">OUR SPONSORS</h2>
+			<p class = "col-md-8"><b>Affiliated District Associations:</b><br>
+Ashoknagar, Alirajpur, Balaghat, Betul, Bhopal, Chhatarpur, Chhindwara, Datia,
+Dewas, Dhar, Gwalior, Hoshangabad, Indore, Jabalpur, Katni,
+Khandwa, Khargone, Mandla, Mandsaur, Neemach, Raisen, Rajgarh,
+Ratlam, Rewa, Sagar, Satna, Sehore, Seoni, Shajapur, Shivpuri
+</p>
+			<img id = "sponsor" class = " col-md-4" src="images/bbd-logo.jpg" style="margin: 0px;">
+			<br>
+		</div>
+	</div>
+
+<!--  <div class="wrap31" style="margin-top: -2px;">
+		<div class="footer">Copyright © 2017 MPBA. All rights reserved.&nbsp;|&nbsp;&nbsp;&nbsp;Developed By: Rishabh, Harshit
+		</div>
+	</div> -->
+
+<!--   <div class="wrap31 col-md-12" style="margin-top: -2px; background-color: #b6d4ba">
+ <b> <div class="footer">Copyright © 2017 MPBA. All Rights Reserved.&nbsp;|&nbsp;&nbsp;&nbsp;Developed By: Rishabh, Harshit</div></b>
+</div> -->
+	<!-- <br> -->
+<div align="center" style="background-color: #b6d4ba;border-radius: 8px;margin-top: 6px
+">
+<b>Copyright © 2017 MPBA. All Rights Reserved.| Developed By: Rishabh Jadia & Harshit Mahajan</b>
+</div>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-103651154-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+</body>
+</html>

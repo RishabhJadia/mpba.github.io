@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Official MPBA Website</title>
+
+	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+	<meta http-equiv="Content-Type" e="text/html;charset=utf-8">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet"> -->
+
+
+
+	 <meta name="description" content="In MADHYA PRADESH, we have extremely talented badminton players and we have great badminton minds and coaches">
+	<meta name="keywords" content="MPBA,mpba,MADHYA PRADESH BADMINTON,Badminton,madhya pradesh badminton">
+	<meta name="author" content="Rishabh,Harshit">
+ 
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+<link rel="stylesheet" type="text/css" href="ticker.css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src = "jquery.js"></script>
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>  -->
+<script src="ticker.js"></script>
+<script src="myjs.js"></script>
+
+<!--   <script src = "fittext.js"></script> -->
+<!-- <script type="text/javascript">
+	$(document).ready(function(){
+		
+				$("#mar").hide();
+
+});
+</script>  -->
+<style type="text/css">
+
+
+
+	.navbar-default {
+		background-color: #F8F8F8;
+		border-color: #E7E7E7;
+}
+
+/* Title */
+.navbar-default .navbar-brand {
+		color: #777;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+		color: #5E5E5E;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+		color: #777;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+		color: #333;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+		color: #555;
+		background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+		color: #555;
+		background-color: #D5D5D5;
+}
+/* Caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+		border-top-color: #777;
+		border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+		border-top-color: #333;
+		border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+		border-top-color: #555;
+		border-bottom-color: #555;
+}
+/* Mobile version */
+.navbar-default .navbar-toggle {
+		border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+		background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+		background-color: #CCC;
+}
+@media (max-width: 767px) {
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+				color: #777;
+		}
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+					color: #333;
+		}
+}
+.dropdown-submenu {
+		position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+		top: 0;
+		left: 100%;
+		margin-top: -1px;
+}
+
+</style>
+</head>
+<body>
+<script>
+window.addEventListener('resize', change);
+
+
+function change(){
+
+
+if(window.innerWidth<=700){
+
+document.getElementById("head").style.fontSize = "15px";
+document.getElementById("slider").style.display = 'none';
+document.getElementById("sponsor").style.width = '350px';
+document.getElementById("logo").style.width = '43%';
+
+/*document.getElementById("tick").style.display = 'none';
+document.getElementById("mar").style.display = 'block';
+
+*/
+}else{
+	document.getElementById("head").style.fontSize = "36px";
+document.getElementById("slider").style.display = 'block';
+document.getElementById("logo").style.width = '13%';
+/*
+document.getElementById("mar").style.display = 'none';
+document.getElementById("tick").style.display = 'block';*/
+}
+}
+
+$(document).ready(function(){
+	 change();
+
+
+
+	 if(window.location.toString().indexOf("success") !== -1){
+	 	//alert("success")
+	 	$('#myModal').modal('toggle');
+	 }
+
+
+
+/*document.getElementById("sponsor").style.width = '40%';
+document.getElementById("sponsor").style.height = '40%';*/
+});
+
+
+$(document).ready(function(){
+
+
+	$('.dropdown-submenu a.test').on("click", function(e){
+		$(this).next('ul').toggle();
+		e.stopPropagation();
+		e.preventDefault();
+	});
+
+});
+
+
+</script>
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Submit success</h4>
+        </div>
+        <div class="modal-body">
+          <p>Your form has successfully submitted.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<div class= "col-md-12 margi">
+	<div class="wrap margi" >
+		<div class="header container-fluid">
+			<img  id = "logo" src="logo.png">
+			<br>
+				<h1 id="head" style="color:red;">
+				<b>MADHYA PRADESH BADMINTON ASSOCIATION</b></h1>
+		</div>
+	</div>
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+		 <!--  <a class="navbar-brand" href="#">WebSiteName</a> -->
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="registration.html">Registration</a></li>
+
+				<!-- <li class="dropdown">
+					<a class="dropdown-toggle expand" data-toggle="dropdown"  href="#">Players<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					 <li><a href="http://www.badmintonindia.org/players/bai-player-id/" target="_blank">Players BAI ID(Search Last Name Followed By First Name)</a></li>
+			 <li><a href="registration_new1.pdf" target="_blank">BAI players ID Form</a></li>
+						<li><a href="http://www.badmintonindia.org/players/bwf-player-id/" target="_blank">Indian Players BWF ID</a></li>
+					 
+					 <li><a href = "BWF_FORM.pdf"  target="_blank">BWF players ID Form</a></li>
+					 <li><a href = "Player_Id_201_Publish.pdf"  target="_blank">State players ID</a></li>
+					 <li><a href = "ID_MPBA_Player_ID_Form.pdf"  target="_blank">State Players ID Form</a></li>
+					 <li><a href = "mpba_players_id_circular.jpg"  target="_blank">Mpba Players ID Circular</a></li>
+					 <li><a href = "Draft_to_State_Associations_on_BAI_ID_to_prevent_Age_Fraud.pdf"  target="_blank">Prevent Age Fraud</a></li>
+					</ul>
+				</li> -->
+
+				<li class="dropdown">
+					<a class="dropdown-toggle expand" data-toggle="dropdown"  href="#">Players<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-submenu">
+							<a id = "ss"  class="test" tabindex="-1" href="#">Players Id<span class="caret"></span></a>
+							<ul id = "ssh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+								<li><a href="http://www.badmintonindia.org/players/bwf-player-id/" style="text-decoration: none;" target="_blank">BWF (Search Last Name Followed By First Name)</a></li>
+								<li><a href="http://www.badmintonindia.org/players/bai-player-id/" style="text-decoration: none;" target="_blank">BAI (Search Last Name Followed By First Name)</a></li>
+								<li><a href="mpba_player_ids.pdf" style="text-decoration: none;" target="_blank">MPBA</a></li>
+							</ul>
+						</li>
+						<li class="dropdown-submenu">
+							<a id = "js"  class="test" tabindex="-1" href="#">Players Id Form<span class="caret"></span></a>
+							<ul id = "jsh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+								<li><a href="BWF_FORM.pdf" style="text-decoration: none;" target="_blank">BWF</a></li>
+								<li><a href="bai_player_id_form.pdf" style="text-decoration: none;" target="_blank">BAI</a></li>
+								<li><a href="mpba_player_id_form.pdf" style="text-decoration: none;" target="_blank">MPBA</a></li>
+							</ul>
+						</li>
+						<li class="dropdown-submenu">
+							<a id = "sj"  class="test" tabindex="-1" href="#">Guidelines<span class="caret"></span></a>
+							<ul id = "sjh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+								<li><a href="http://bwfcorporate.com/players/entries/" style="text-decoration: none;" target="_blank">BWF</a></li>
+								<li><a href="bai_guidelines.pdf" style="text-decoration: none;" target="_blank">BAI</a></li>
+								<li><a href="mpba_guidelines.pdf" style="text-decoration: none;" target="_blank">MPBA</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<!-- <li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Players Ranking<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="http://bwfbadminton.com/rankings/" target="_blank">BWF</a></li>
+						<li><a href="http://www.badmintonindia.org/players/rankings/senior/		" target="_blank">BAI</a></li>
+						<li><a href="#">MPBA</a></li>
+						<li><a href="#">Historical Ranking</a></li>			
+					</ul>
+				</li> -->
+
+				<li><a href="gallery.html">Gallery</a></li>
+
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Organizations<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<!-- <li><a href="executive_members.html">Council</a></li> -->
+						<li><a href="organizations.html">Affiliated Organizations</a></li>
+						<li><a href="mpba_constitution.pdf" target="_blank">Constitutions</a></li>
+						<li><a href="handbook_II_laws_of_badminton_bwf.pdf" target="_blank">Laws Of Badminton</a></li>						
+					</ul>
+				</li>
+
+
+					<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Anti-Doping<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="http://www.wada-ama.org/en/" target="_blank">World Anti-doping Agency (WADA)</a></li>
+						<li><a href="http://www.wada-ama.org/en/Education-Awareness/" target="_blank">WADA Education and Awareness</a></li>
+						<li><a href="http://www.wada-ama.org/en/ADAMS/" target="_blank">ADAMS and Whereabouts</a></li>
+						<li><a href="http://www.bwfbadminton.org/page.aspx?id=15524" target="_blank">BWF Anti-Doping Regulations</a></li>
+					</ul>
+				</li>
+
+				<li class="dropdown">
+					<a id = "tour1" class="dropdown-toggle" data-toggle="dropdown" href="#">Tournaments<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-submenu">
+							<a id = "ss1"  class="test" tabindex="-1" href="#">Upcoming Tournaments<span class="caret"></span></a>
+							<ul id = "ssh1" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+								<li><a href="http://badmintonindia.org/events/tournaments/international-2018/" style="text-decoration: none;" target="_blank">International</a></li>
+								<li><a href="http://badmintonindia.org/events/tournaments/domestic-2018/" style="text-decoration: none;" target="_blank">National</a></li>
+								<li><a href="Circular_bhopal_2017.pdf" style="text-decoration: none;" target="_blank">State</a></li>
+							</ul>
+						</li>
+						<li class="dropdown-submenu">
+							<a id = "js1"  class="test" tabindex="-1" href="#">Completed Tournaments/Results<span class="caret"></span></a>
+							<ul id = "jsh1" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+								<li><a href="http://bwfbadminton.com/results/3163/gwangju-victor-korea-masters-2017/podium/" style="text-decoration: none;" target="_blank">International</a></li>
+								<li><a href="http://badmintonindia.org/events/results/2017/" style="text-decoration: none;" target="_blank">National</a></li>
+								<li><a href="state_result_2017.pdf" style="text-decoration: none;" target="_blank">State</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<!-- <li class="dropdown">
+					<a id = "tour" class="dropdown-toggle" data-toggle="dropdown" href="#">Tournaments<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-submenu">
+							<a id = "ss"  class="test" tabindex="-1" href="#">Senior State 2017 Jabalpur & Satna<span class="caret"></span></a>
+							<ul id = "ssh"class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+								<li><a href="Circular_draws_result_jabalpur_2017.pdf" style="text-decoration: none;" target="_blank">Jabalpur Senior State Circular, Draws & Results</a></li>
+								<li><a href="Circular_draws_satna_results_2017.pdf" style="text-decoration: none;" target="_blank">Satna Senior State Circular, Draws & Results</a></li>
+							</ul>
+						</li>
+						<li  class="dropdown-submenu">
+							<a id = "js"class="test" tabindex="-1" href="#">Junior State 2017 Mandla<span class="caret"></span></a>
+							<ul id = "jsh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+								<li><a href="Circular_draws_Mandla_2017.pdf" style="text-decoration: none;" target="_blank">Mandla Junior State Circular, Draws</a></li>
+							</ul>
+						</li>	
+						<li  class="dropdown-submenu">
+							<a id = "sj" class="test" tabindex="-1" href="#">Sub-Junior State 2017 Katni, Singrauli & Gwalior<span class="caret"></span></a>
+							<ul id = "sjh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+								<li><a href="Circular_draws_result_katni_2017.pdf" style="text-decoration: none;" target="_blank">Katni Sub-Junior State Circular, Draws & Results</a></li>
+								<li><a href="Circular_draws_Sub_Junior_Singrauli_2017.pdf" style="text-decoration: none;" target="_blank">Singrauli 2nd Sub-Junior State Circular, Draws</a></li>
+								<li><a href="Circular_draws_sub_junior_Gwalior_2017.pdf" style="text-decoration: none;" target="_blank">Gwalior 3rd Sub-Junior State Circular</a></li>
+							</ul>
+						</li>							
+					</ul>
+
+				</li> -->
+
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="container-fluid w" style="
+    margin-top: -20px;">
+  <h2 style="text-align:center;text-decoration: underline;font-family: fantasy;">EXECUTIVE MEMBERS</h2>     
+  <div class="table-responsive">          
+   <table class="table table-hover table-bordered" style="border:2px solid black; text-align:center;">
+	<tbody>
+		<tr class="success">
+			<td width="5%" style="text-align: center;"><p><strong>S.No.</strong></p></td>
+			<td width="2%" style="text-align: center;"><p><strong>Name</strong></p></td>
+			<td width="5%" style="text-align: center;"><p><strong>Designation</strong></p></td>
+			<td width="10%" style="text-align: center;"><p><strong>Addresses</strong></p></td>
+			<td width="1%" style="text-align: center;"><p><strong>Mobile No.</strong></p></td>
+			<td width="3%" style="text-align: center;"><p><strong>Email-id</strong></p></td>
+		</tr>
+		<tr class="danger">
+			<td colspan="7" width="100%"><p><strong>PRESIDENT</strong></p></td>
+		</tr>
+		<tr class="info">
+			<td width="5%" style="text-align: center;"><p>1</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Girish Kemkar</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>President, MPBA </p></td>
+			<td width="24%" style="text-align: center;"><p>MPBA, Chein Singh Ka Bagcha,
+			New Palasia, Indore</p></td>
+			<td width="12%" style="text-align: center;"><p></p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+		<tr class="success">
+			<td colspan="7" width="100%"><p><strong>Sr. VICE PRESIDENT</strong></p></td>
+		</tr>
+		<tr class="danger">
+			<td width="5%" style="text-align: center;"><p>2</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>H.S. Pawar</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Sr. Vice President, MPBA</p></td>
+			<td width="24%" style="text-align: center;"><p>DDBA, HAPPY VILLA’, Indore Road, Dhar.</p></td>
+			<td width="12%" style="text-align: center;">9826032343<p></p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+			<tr class="info">
+			<td colspan="7" width="100%"><p><strong>VICE PRESIDENTS</strong></p></td>
+		</tr>
+		<tr class="success">
+			<td width="5%" style="text-align: center;"><p>3</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Pancham Jain</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Vice President, MPBA </p></td>
+			<td width="24%" style="text-align: center;"><p>KDBA, NEHRU PARK, RAGHUNATH GANJ, Katni</p></td>
+			<td width="12%" style="text-align: center;"><p>07622-507010</p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+
+		<tr class="danger">
+			<td width="5%" style="text-align: center;"><p>4</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Dr. Rakesh Pathak</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Vice President, MPBA</p></td>
+			<td width="24%" style="text-align: center;"><p>GDBA, G-1 CHINAV APARTMENT,
+HARISHANKAR PURAM, Gwalior</p></td>
+			<td width="12%" style="text-align: center;"><p></p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+		<tr class="info">
+			<td width="5%" style="text-align: center;"><p>5</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Pravin Vashisthta</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Vice President, MPBA</p></td>
+			<td width="24%" style="text-align: center;"><p>UDBA, 58, DAMDAMA, KOTHI ROAD, Ujjain</p></td>
+			<td width="12%" style="text-align: center;"><p>9826033007</p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+		<tr class="success">
+			<td width="5%" style="text-align: center;"><p>6</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Ajay Soni</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Vice President, MPBA</p></td>
+			<td width="24%" style="text-align: center;"><p>BDBA, Hotel Mid Town, Circuit House Road, Balaghat</p></td>
+			<td width="12%" style="text-align: center;"><p>8989444333</p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+		<tr class="danger">
+			<td width="5%" style="text-align: center;"><p>7</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Alok Kharia</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Vice President, MPBA </p></td>
+			<td width="24%" style="text-align: center;"><p>-</p></td>
+			<td width="12%" style="text-align: center;"><p></p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+
+		<tr class="info">
+			<td colspan="7" width="100%"><p><strong>SECRETARY</strong></p></td>
+		</tr>
+		<tr class="success">
+			<td width="5%" style="text-align: center;"><p>8</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Anil Choughule</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Secretary, MPBA </p></td>
+			<td width="24%" style="text-align: center;"><p>MPBA, 97, Vasudeo Nagar, Indore</p></td>
+			<td width="12%" style="text-align: center;"><p>9425349444, 9826840085</p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+
+
+		<tr class="danger">
+			<td colspan="7" width="100%"><p><strong>TREASURER</strong></p></td>
+		</tr>
+		<tr class="info">
+			<td width="5%" style="text-align: center;"><p>9</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Deepak Shrivastava</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Treasurer, MPBA </p></td>
+			<td width="24%" style="text-align: center;"><p>NDBA, BUGLOW NO 45, MAHAVEER BAGH, CRPF ROAD, Neemuch, MP,</p></td>
+			<td width="12%" style="text-align: center;"><p>7773888561</p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+		<tr class="success">
+			<td colspan="7" width="100%"><p><strong>JOINT SECRETARIES</strong></p></td>
+		</tr>
+		<tr class="danger">
+			<td width="5%" style="text-align: center;"><p>10</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Pankaj Jain</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Joint Secretary, MPBA </p></td>
+			<td width="24%" style="text-align: center;"><p>RDBA, WARD NO. 4, OBEDULLAGANJ, Raisen</p></td>
+			<td width="12%" style="text-align: center;"><p>9893274600</p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+		<tr class="info">
+			<td width="5%" style="text-align: center;"><p>11</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Javed Khan</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Joint Secretary, MPBA </p></td>
+			<td width="24%" style="text-align: center;"><p>CDBA, NOOR HOUSE, UBAID NAGAR, KUKADA, Chhindwara</p></td>
+			<td width="12%" style="text-align: center;"><p>9425405086</p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+		<tr class="success">
+			<td width="5%" style="text-align: center;"><p>12</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Chandresh Khare</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Joint Secretary, MPBA </p></td>
+			<td width="24%" style="text-align: center;"><p>MDBA, UNIQUE STUDIO, BANJAR CLUB MARKET, COLLECTORATE ROAD, Mandla</p></td>
+			<td width="12%" style="text-align: center;"><p>9425163699</p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+
+		<tr class="danger">
+			<td colspan="7" width="100%"><p><strong>ADVISOR</strong></p></td>
+		</tr>
+		<tr class="info">
+			<td width="5%" style="text-align: center;"><p>13</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Jai Singh</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Joint Secretary, MPBA </p></td>
+			<td width="24%" style="text-align: center;"><p>BDBA, C/3, SECTOR-B, PIPLANI, BHEL, Bhopal</p></td>
+			<td width="12%" style="text-align: center;"><p>922947550</p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+		<tr class="success">
+			<td colspan="7" width="100%"><p><strong>EXECUTIVE COMMITTEE MEMBERS</strong></p></td>
+		</tr>
+		<tr class="danger">
+			<td width="5%" style="text-align: center;"><p>14</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Anil Jain</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Executive Committee Member, MPBA</p></td>
+			<td width="24%" style="text-align: center;"><p>-</p></td>
+			<td width="12%" style="text-align: center;"><p></p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+		<tr class="info">
+			<td width="5%" style="text-align: center;"><p>15</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Dilip Mahajan</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Executive Committee Member, MPBA</p></td>
+			<td width="24%" style="text-align: center;"><p>-</p></td>
+			<td width="12%" style="text-align: center;"><p></p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+		<tr class="success">
+			<td width="5%" style="text-align: center;"><p>16</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>N. Subramani</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Executive Committee Member, MPBA</p></td>
+			<td width="24%" style="text-align: center;"><p>729/1A, AMANPUR NEAR KALI MATH TEMPLE, MADAN MAHAL, Jabalpur</p></td>
+			<td width="12%" style="text-align: center;"><p>09827239777</p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+		<tr class="danger">
+			<td width="5%" style="text-align: center;"><p>17</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Mohd. Ishtiaq</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Executive Committee Member, MPBA</p></td>
+			<td width="24%" style="text-align: center;"><p>RDBA, Shakoor Cottons, Kacheri Road, Near Khanna Churaha, Rewa,</p></td>
+			<td width="12%" style="text-align: center;"><p>9425841888</p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+		<tr class="info">
+			<td width="5%" style="text-align: center;"><p>18</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Sanagam Lal Jaiswal</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Executive Committee Member, MPBA</p></td>
+			<td width="24%" style="text-align: center;"><p>KDBA, 27/94, CIVIL LINES, KATNI</p></td>
+			<td width="12%" style="text-align: center;"><p>9229471550</p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+		<tr class="success">
+			<td width="5%" style="text-align: center;"><p>19</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Navin Jain</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Executive Committee Member, MPBA</p></td>
+			<td width="24%" style="text-align: center;"><p>-</p></td>
+			<td width="12%" style="text-align: center;"><p></p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+		<tr class="danger">
+			<td width="5%" style="text-align: center;"><p>20</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Arun Raghuwanshi</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Executive Committee Member, MPBA</p></td>
+			<td width="24%" style="text-align: center;"><p>ADBA, RAGHU SADAN, MANDI ROAD,
+Ashoknagar</p></td>
+			<td width="12%" style="text-align: center;"><p></p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+		<tr class="info">
+			<td width="5%" style="text-align: center;"><p>21</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Nikhil Choksey</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Executive Committee Member, MPBA</p></td>
+			<td width="24%" style="text-align: center;"><p>SDBA, KALAR BAGH, NAVAGRAH TEMPLE, Shivpuri</p></td>
+			<td width="12%" style="text-align: center;"><p></p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+		<tr class="success">
+			<td width="5%" style="text-align: center;"><p>22</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Sunil Joshi</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Executive Committee Member, MPBA</p></td>
+			<td width="24%" style="text-align: center;"><p>-</p></td>
+			<td width="12%" style="text-align: center;"><p>-</p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+		<tr class="danger">
+			<td width="5%" style="text-align: center;"><p>23</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Rajib Ghoshi</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Executive Committee Member, MPBA</p></td>
+			<td width="24%" style="text-align: center;"><p>-</p></td>
+			<td width="12%" style="text-align: center;"><p></p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+		
+		<tr class="info">
+			<td width="5%" style="text-align: center;"><p>24</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>G.P. Malviya</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Executive Committee Member, MPBA</p></td>
+			<td width="24%" style="text-align: center;"><p>-</p></td>
+			<td width="12%" style="text-align: center;"><p></p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>
+
+		<tr class="success">
+			<td colspan="7" width="100%"><p><strong>MPBA COACH</strong></p></td>
+		</tr>
+		<tr class="danger">
+			<td width="5%" style="text-align: center;"><p>25</p></td>
+			<td width="16%" style="text-align: center;"><p><strong>Amit Kulkarni</strong></p></td>
+			<td width="22%" style="text-align: center;"><p>Coach, MPBA</p></td>
+			<td width="24%" style="text-align: center;"><p>97, Vasudeo Nagar, Indore</p></td>
+			<td width="12%" style="text-align: center;"><p>9406877777</p></td>
+			<td width="18%" style="text-align: center;"><p>himantab@hotmail.com</p></td>
+		</tr>		
+	</tbody>
+  </table>
+</div>
+</div>
+	<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-103651154-1', 'auto');
+		  ga('send', 'pageview');
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>The Official MPBA Website</title>
+
+	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+	<meta http-equiv="Content-Type" e="text/html;charset=utf-8">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet"> -->
+
+
+
+	<meta name="description"
+		content="In MADHYA PRADESH, we have extremely talented badminton players and we have great badminton minds and coaches">
+	<meta name="keywords" content="MPBA,mpba,MADHYA PRADESH BADMINTON,Badminton,madhya pradesh badminton">
+	<meta name="author" content="Rishabh,Harshit">
+
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" type="text/css" href="ticker.css">
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="jquery.js"></script>
+	<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>  -->
+	<script src="ticker.js"></script>
+	<script src="myjs.js"></script>
+
+	<!--   <script src = "fittext.js"></script> -->
+	<!-- <script type="text/javascript">
+	$(document).ready(function(){
+		
+				$("#mar").hide();
+
+});
+</script>  -->
+	<style type="text/css">
+		.navbar-default {
+			background-color: #F8F8F8;
+			border-color: #E7E7E7;
+		}
+
+		/* Title */
+		.navbar-default .navbar-brand {
+			color: #777;
+		}
+
+		.navbar-default .navbar-brand:hover,
+		.navbar-default .navbar-brand:focus {
+			color: #5E5E5E;
+		}
+
+		/* Link */
+		.navbar-default .navbar-nav>li>a {
+			color: #777;
+		}
+
+		.navbar-default .navbar-nav>li>a:hover,
+		.navbar-default .navbar-nav>li>a:focus {
+			color: #333;
+		}
+
+		.navbar-default .navbar-nav>.active>a,
+		.navbar-default .navbar-nav>.active>a:hover,
+		.navbar-default .navbar-nav>.active>a:focus {
+			color: #555;
+			background-color: #E7E7E7;
+		}
+
+		.navbar-default .navbar-nav>.open>a,
+		.navbar-default .navbar-nav>.open>a:hover,
+		.navbar-default .navbar-nav>.open>a:focus {
+			color: #555;
+			background-color: #D5D5D5;
+		}
+
+		/* Caret */
+		.navbar-default .navbar-nav>.dropdown>a .caret {
+			border-top-color: #777;
+			border-bottom-color: #777;
+		}
+
+		.navbar-default .navbar-nav>.dropdown>a:hover .caret,
+		.navbar-default .navbar-nav>.dropdown>a:focus .caret {
+			border-top-color: #333;
+			border-bottom-color: #333;
+		}
+
+		.navbar-default .navbar-nav>.open>a .caret,
+		.navbar-default .navbar-nav>.open>a:hover .caret,
+		.navbar-default .navbar-nav>.open>a:focus .caret {
+			border-top-color: #555;
+			border-bottom-color: #555;
+		}
+
+		/* Mobile version */
+		.navbar-default .navbar-toggle {
+			border-color: #DDD;
+		}
+
+		.navbar-default .navbar-toggle:hover,
+		.navbar-default .navbar-toggle:focus {
+			background-color: #DDD;
+		}
+
+		.navbar-default .navbar-toggle .icon-bar {
+			background-color: #CCC;
+		}
+
+		@media (max-width: 767px) {
+			.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+				color: #777;
+			}
+
+			.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,
+			.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+				color: #333;
+			}
+		}
+
+		.dropdown-submenu {
+			position: relative;
+		}
+
+		.dropdown-submenu .dropdown-menu {
+			top: 0;
+			left: 100%;
+			margin-top: -1px;
+		}
+	</style>
+</head>
+
+<body>
+	<script>
+		window.addEventListener('resize', change);
+
+
+		function change() {
+
+
+			if (window.innerWidth <= 700) {
+
+				document.getElementById("head").style.fontSize = "15px";
+				document.getElementById("slider").style.display = 'none';
+				document.getElementById("sponsor").style.width = '350px';
+				document.getElementById("logo").style.width = '43%';
+
+				/*document.getElementById("tick").style.display = 'none';
+				document.getElementById("mar").style.display = 'block';
+				
+				*/
+			} else {
+				document.getElementById("head").style.fontSize = "36px";
+				document.getElementById("slider").style.display = 'block';
+				document.getElementById("logo").style.width = '13%';
+				/*
+				document.getElementById("mar").style.display = 'none';
+				document.getElementById("tick").style.display = 'block';*/
+			}
+		}
+
+		$(document).ready(function () {
+			change();
+
+
+
+			if (window.location.toString().indexOf("success") !== -1) {
+				//alert("success")
+				$('#myModal').modal('toggle');
+			}
+
+
+
+			/*document.getElementById("sponsor").style.width = '40%';
+			document.getElementById("sponsor").style.height = '40%';*/
+		});
+
+
+		$(document).ready(function () {
+
+
+			$('.dropdown-submenu a.test').on("click", function (e) {
+				$(this).next('ul').toggle();
+				e.stopPropagation();
+				e.preventDefault();
+			});
+
+		});
+
+
+	</script>
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Submit success</h4>
+				</div>
+				<div class="modal-body">
+					<p>Your form has successfully submitted.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="col-md-12 margi">
+		<div class="wrap margi">
+			<div class="header container-fluid">
+				<img id="logo" src="logo.png">
+				<br>
+				<h1 id="head" style="color:red;">
+					<b>MADHYA PRADESH BADMINTON ASSOCIATION</b></h1>
+			</div>
+		</div>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!--  <a class="navbar-brand" href="#">WebSiteName</a> -->
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="registration.html">Registration</a></li>
+
+						<!-- <li class="dropdown">
+					<a class="dropdown-toggle expand" data-toggle="dropdown"  href="#">Players<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+					 <li><a href="http://www.badmintonindia.org/players/bai-player-id/" target="_blank">Players BAI ID(Search Last Name Followed By First Name)</a></li>
+			 <li><a href="registration_new1.pdf" target="_blank">BAI players ID Form</a></li>
+						<li><a href="http://www.badmintonindia.org/players/bwf-player-id/" target="_blank">Indian Players BWF ID</a></li>
+					 
+					 <li><a href = "BWF_FORM.pdf"  target="_blank">BWF players ID Form</a></li>
+					 <li><a href = "Player_Id_201_Publish.pdf"  target="_blank">State players ID</a></li>
+					 <li><a href = "ID_MPBA_Player_ID_Form.pdf"  target="_blank">State Players ID Form</a></li>
+					 <li><a href = "mpba_players_id_circular.jpg"  target="_blank">Mpba Players ID Circular</a></li>
+					 <li><a href = "Draft_to_State_Associations_on_BAI_ID_to_prevent_Age_Fraud.pdf"  target="_blank">Prevent Age Fraud</a></li>
+					</ul>
+				</li> -->
+
+						<li class="dropdown">
+							<a id="tour" class="dropdown-toggle expand" data-toggle="dropdown" href="#">Players<span
+									class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-submenu">
+									<a id="ss" class="test" tabindex="-1" href="#">Players Id<span
+											class="caret"></span></a>
+									<ul id="ssh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+										<li><a href="http://www.badmintonindia.org/players/bwf-player-id/"
+												style="text-decoration: none;" target="_blank">BWF (Search Last Name
+												Followed By First Name)</a></li>
+										<li><a href="http://www.badmintonindia.org/players/bai-player-id/"
+												style="text-decoration: none;" target="_blank">BAI (Search Last Name
+												Followed By First Name)</a></li>
+										<li><a href="mpba_player_ids.pdf" style="text-decoration: none;"
+												target="_blank">MPBA(Updated till 24 Aug)</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a id="js" class="test" tabindex="-1" href="#">Players Id Form<span
+											class="caret"></span></a>
+									<ul id="jsh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+										<li><a href="BWF_FORM.pdf" style="text-decoration: none;"
+												target="_blank">BWF</a></li>
+										<li><a href="bai_player_id_form.pdf" style="text-decoration: none;"
+												target="_blank">BAI</a></li>
+										<li><a href="mpba_player_id_form.pdf" style="text-decoration: none;"
+												target="_blank">MPBA</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a id="sj" class="test" tabindex="-1" href="#">Guidelines<span
+											class="caret"></span></a>
+									<ul id="sjh" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+										<li><a href="http://bwfcorporate.com/players/entries/"
+												style="text-decoration: none;" target="_blank">BWF</a></li>
+										<li><a href="bai_guidelines.pdf" style="text-decoration: none;"
+												target="_blank">BAI</a></li>
+										<li><a href="mpba_guidelines.pdf" style="text-decoration: none;"
+												target="_blank">MPBA</a></li>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a id="sjj" class="test" tabindex="-1" href="#">Players Ranking<span
+											class="caret"></span></a>
+									<ul id="sjhj" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+										<li><a href="Ranking_Sub_Junior_sep_2022.pdf" style="text-decoration: none;"
+												target="_blank">Sub-Juniors 2022</a></li>
+										<li><a href="Ranking_Junior_updated_july_2022.pdf" style="text-decoration: none;"
+												target="_blank">Juniors 2022</a></li>
+										<li><a href="Ranking_Senior_21_mar_2020.pdf" style="text-decoration: none;"
+												target="_blank">Seniors 2020</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+
+						<li class="dropdown">
+							<a id="tour1" class="dropdown-toggle" data-toggle="dropdown" href="#">Tournaments<span
+									class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-submenu">
+									<a id="ss1" class="test" tabindex="-1" href="#">Upcoming Tournaments<span
+											class="caret"></span></a>
+									<ul id="ssh1" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+										<li><a href="http://badmintonindia.org/events/tournaments/international-2018/"
+												style="text-decoration: none;" target="_blank">International</a></li>
+										<li><a href="http://badmintonindia.org/events/tournaments/domestic-2018/"
+												style="text-decoration: none;" target="_blank">National</a></li>
+										<li class="dropdown-submenu">
+											<a class="test" tabindex="-1">State<span class="caret"></span></a>
+											<ul id="ssh2" class="dropdown-menu"
+												style="padding-top: 5px;margin-top: -6px;">
+												<li><a href="Circular_2nd_Sub_Junior_Gwalior_2018.pdf"
+														style="text-decoration: none;" target="_blank">Circular 2nd
+														Sub-Junior Gwalior 2018</a></li>
+												<li><a href="Circular_junior_dhar_2018.pdf"
+														style="text-decoration: none;" target="_blank">Circular Junior
+														Dhar 2018</a></li>
+												<li><a href="M&Q_Bhopal_seniors_2018.pdf" style="text-decoration: none;"
+														target="_blank">M&Q Senior Bhopal 2018</a></li>
+												<li><a href="Circular_draws_senior_bhopal 2018.pdf"
+														style="text-decoration: none;" target="_blank">Circular Senior
+														Bhopal 2018</a></li>
+											</ul>
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a id="js1" class="test" tabindex="-1" href="#">Completed Tournaments/Results<span
+											class="caret"></span></a>
+									<ul id="jsh1" class="dropdown-menu" style="padding-top: 5px;margin-top: -6px;">
+										<li><a href="http://bwfbadminton.com/calendar/2018/completed/"
+												style="text-decoration: none;" target="_blank">International</a></li>
+										<li><a href="http://badmintonindia.org/events/results/2017/"
+												style="text-decoration: none;" target="_blank">National</a></li>
+										<li class="dropdown-submenu">
+											<a href="#" class="test" tabindex="-1">State<span class="caret"></span></a>
+											<ul id="jsh2" class="dropdown-menu"
+												style="padding-top: 5px;margin-top: -6px;">
+												<li><a href="Summary_Result_Indore_Sub_Junior_2018.pdf"
+														target="_blank">Indore (Sub-Junior State Championship 2018)</a>
+												</li>
+												<li><a href="Summary_Result_Bhopal_Veterans_2018.pdf"
+														target="_blank">Bhopal (Veterans State Championship 2018)</a>
+												</li>
+												<li><a href="Summary_Result_Chhindwara_Junior_2017.pdf"
+														target="_blank">Chhindwara (Junior State Championship 2017)</a>
+												</li>
+												<li><a href="Summary_Result_Jabalpur_Senior_2017.pdf"
+														target="_blank">Jabalpur (57th Inter District and 72th Senior
+														State Championship 2017 )</a></li>
+												<li><a href="Summary_Result_Satna_Senior_2017.pdf" target="_blank">Satna
+														(Senior State Ranking 2017)</a></li>
+												<li><a href="Summary_Result_Katni_Sub_Junior_2017.pdf"
+														target="_blank">Katni (Sub-Junior State Championship 2017)</a>
+												</li>
+												<li><a href="Summary_Result_Mandla_Junior_2017.pdf"
+														target="_blank">Mandla (Junior State Ranking 2017)</a></li>
+												<li><a href="Summay_Result_Singrauli_Sub_Junior_2017.pdf"
+														target="_blank">Singrauli (1st Sub-Junior State Ranking
+														2017)</a></li>
+												<li><a href="Summary_Result_Gwalior_Sub_Junior_2017.pdf"
+														target="_blank">Gwalior (2nd Sub-Junior State Ranking 2017)</a>
+												</li>
+												<li><a href="#" target="_blank">Bhopal (Veterans State Championship 2017
+														)</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<!-- <li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Players Ranking<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="http://bwfbadminton.com/rankings/" target="_blank">BWF</a></li>
+						<li><a href="http://www.badmintonindia.org/players/rankings/senior/		" target="_blank">BAI</a></li>
+						<li><a href="#">MPBA</a></li>
+						<li><a href="#">Historical Ranking</a></li>			
+					</ul>
+				</li> -->
+
+						<li><a href="gallery.html">Gallery</a></li>
+
+						<li class="dropdown">
+							<a class="dropdown-toggle active" data-toggle="dropdown" href="#">Organizations<span
+									class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<!-- <li><a href="executive_members.html">Council</a></li> -->
+								<li><a href="organizations.html">Affiliated Organizations</a></li>
+								<li><a href="mpba_constitution.pdf" target="_blank">Constitutions</a></li>
+								<li><a href="handbook_II_laws_of_badminton_bwf.pdf" target="_blank">Laws Of
+										Badminton</a></li>
+							</ul>
+						</li>
+
+
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Anti-Doping<span
+									class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="http://www.wada-ama.org/en/" target="_blank">World Anti-doping Agency
+										(WADA)</a></li>
+								<li><a href="http://www.wada-ama.org/en/Education-Awareness/" target="_blank">WADA
+										Education and Awareness</a></li>
+								<li><a href="http://www.wada-ama.org/en/ADAMS/" target="_blank">ADAMS and
+										Whereabouts</a></li>
+								<li><a href="http://www.bwfbadminton.org/page.aspx?id=15524" target="_blank">BWF
+										Anti-Doping Regulations</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container-fluid affilited_associations" style="margin-top: -20px;">
+			<h2 style="text-align:center;text-decoration: underline;font-family: fantasy;">AFFILIATED ASSOCIATIONS</h2>
+			<div class="table-responsive">
+				<table class="table table-hover table-bordered" style="border:2px solid black; text-align:center;">
+					<thead>
+						<tr>
+							<th style="text-align: center;">
+								<h4><b>District Associations</b></h4>
+							</th>
+							<th style="text-align: center;">
+								<h4><b>Secretary Name & Addresses</b></h4>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+
+
+						<tr class="success">
+							<td>ALIRAJPUR(AL)</td>
+							<td>SHRI ASHOK OJHA, HON. PRESIDENT, ALIRAJPUR D B A,<br> SHRI RAJESH CHOUDHARI, HON.
+								SECRETARY,<br>
+								5 TILAK MARG,ALIRAJPUR, MP,Ph. No. 9425413121</td>
+						</tr>
+						<tr class="danger">
+							<td>ASHOK NAGAR(AS)</td>
+							<td>SHRI ARUN RAGHUVANSHI, HON. SECRETARY, ASHOKNAGAR DBA.,<br>RAGHU SADAN, MANDI ROAD,
+								ASHOKNAGAR, MP, Ph. No. 9425196096</td>
+						</tr>
+						<!-- <tr class="success">
+							<td>Alirajpur(AL)</td>
+							<td>Shri Ashok Oza, Hon. Secretary, Alirajpur DBA,<br>21, Bohara Bakhal Marg, Alirajpur,
+								M.P., Ph.No.- 9685408703</td>
+						</tr>
+						<tr class="danger">
+							<td>Ashok Nagar(AS)</td>
+							<td>Shri Arun Raghuvanshi, Hon. Secretary, Ashoknagar DBA,<br>Raghu Sadan, Mandi Road,
+								Ashoknagar, M.P., Ph.No.- 9425196096</td>
+						</tr> -->
+						<tr class="info">
+							<td>Balaghat(BL)</td>
+							<td>Shri Ajay Soni, President BDBA, Hotel Mid Town, Circuit House Road, Balaghat, M.P.,
+								Ph.No.- 8989444333</td>
+						</tr>
+						<tr class="success">
+							<td>Betul(BE)</td>
+							<td>Shri Ramesh Bhoyer, Exe. Member MPBA, HON. Secretary, Betul BDBA,<br>SD-361, Mpeb
+								Colony, Sarni, Betul, M.P., Ph.No.- 9926536071</td>
+						</tr>
+						<tr class="danger">
+							<td>Bhopal(BP)</td>
+							<td>Shri Jai Singh, Hon. Secretary, Bhopal DBA, Hon. Advisor MPBA<br> C/3, Sector-B,
+								Piplani, BHEL, Bhopal, M.P., Ph.No.- 9826285462</td>
+						</tr>
+						<tr class="success">
+							<td>Chhatarpur(CHT)</td>
+							<td>Shri Ravindra Srivas, Hon. Secretary, Chhatarpur DBA,<br> Ram Chhaya, Near Peptech City,
+								Deri Raod, Chhatarpur, M.P., Ph.No.- 9425474665, 9755966024</td>
+						</tr>
+						<tr class="info">
+							<td>Chhindwara(CN)</td>
+							<td>Shri Javed Khan, Hon. Secretary, Exe. Member MPBA, <br>Noor House, Ubaid Nagar, Kukada,
+								Chhindwara, M.P., PH.NO.- 9425405086</td>
+						</tr>
+						<tr class="success">
+							<td>Datia(DT)</td>
+							<td>Shri Prayad Mitra, Hon. Secretary, Datia DBA,<br> Near Ambedkar Bhavan, Chhalla Pura,
+								Datiya, M.P., Ph.No.- </td>
+						</tr>
+						<tr class="danger">
+							<td>Dewas(DE)</td>
+							<td>Shri Amarjeet Singh Khanuja, Hon. Secretary, Dewas DBA, <br> Civil Lines, Dewas, M.P.,
+								Ph. No.- 9425049994</td>
+						</tr>
+						<tr class="info">
+							<td>Dhar(DH)</td>
+							<td>Shri Anil Jain, Hon. Secretary, Dhar DBA, <br>C/O M/S Anil Book Center, Dhar, M.P.,
+								Ph.No.- 9827306971</td>
+						</tr>
+						<tr class="success">
+							<td>Gwalior(GW)</td>
+							<td>Shri Ashutosh Tiwari, Hon. Secretary, Gwalior DBA, <br>114-115 Saraswati Nagar,
+								University Road, Near Silver Estate, Gwalior, M.P., Ph.No.- 9425109205</td>
+						</tr>
+						<tr class="danger">
+							<td>Hoshangabad(HO)</td>
+							<td>Shri K.K.Tiwari, Hon. Secretary, Hoshangabad BDA, <br> MIG-22, Nyas Colony Near Incom
+								Tax Office, Itarsi, M.P, Ph.No.- 9425042970></td>
+						</tr>
+						<tr class="info">
+							<td>Indore(IN)</td>
+							<td>Shri R.P.S. Nayyar, Hon. Secretary, Indore DBA, <br> 101 Guru Kripa Appartment, 107-108,
+								Vishnupuri Annex., Indore, M.P., Ph.No.- 9827074480</td>
+						</tr>
+						<tr class="success">
+							<td>Jabalpur(JA)</td>
+							<td>Shri N. Sunramani, Hon. Secreatary, Jabalpur DBA, Exe. Member MPBA, <br>729/1A, Amanpur
+								Near Kali Matha Temple, Madan Mahal Jabalpur, M.P., Ph.No.- 9827239777</td>
+						</tr>
+						<tr class="danger">
+							<td>Katni(KA)</td>
+							<td>Shri Sangamlal Jaiswal, Hon. Secretary, Katni DBA, <br>27/94, Civil Lines, Katni, M.P.,
+								Ph.No.- 922947550</td>
+						</tr>
+						<tr class="info">
+							<td>Khandwa(EN)</td>
+							<td>Shri M.S. Chouhan, Hon. Secretary, Khandwa DBA,<br> 42, Lig, Civil Lines, Houing Board,
+								Khandwa, M.P., Ph.No.-</td>
+						</tr>
+						<tr class="danger">
+							<td>Khargone(WN)</td>
+							<td>Shri Rajendra Soni, Hon. Secretary, Khargone DBA,<br> 28, Tagore Park Colony, Khargone,
+								M.P., Ph.No.- 9425087338</td>
+						</tr>
+						<tr class="success">
+							<td>Mandla(ML)</td>
+							<td>Shri Chandresh Khare, Hon. Secretary, Mandla DBA, Joint Secretary<br> Unique Studio
+								Banjar Club Market, Collector Road, Mandla, M.P., Ph.No.- 9425163699</td>
+						</tr>
+						<tr class="danger">
+							<td>Mandsaur(MS)</td>
+							<td>Shri K.S.Chouhan, Hon. Secretary, Mandsaur DBA, <br> 24/2 Sudama Nagar, Ramtekri,
+								Mandsaur, M.P., Ph.- 9424812341</td>
+						</tr>
+						<tr class="info">
+							<td>Neemach(NE)</td>
+							<td>Shri Deepak Shrivastava, Hon. Secretary, Neemach DBA, Joint Secretary MPBA,<br> Buglow
+								No. 45, Mahaveer Bagh, CRPF Road, Neemach, M.P., Ph.No.- 7773888561</td>
+						</tr>
+						<tr class="success">
+							<td>Raisen(RS)</td>
+							<td>Shri Pankaj Jain, Hon. Secretary, Raisen DBA <br>Ward No. 4, Obedullaganj, Raisen, M.P.,
+								Ph.No.- 9893274600</td>
+						</tr>
+						<tr class="danger">
+							<td>Rajgarh(RG)</td>
+							<td>Shri Khurshid Ahmeed, Hon. Secretary, Rajgarh DBA,<br> Kamil Manzil, Dargah Colony,
+								Rajgarh (Byora), M.P., Ph.No.- 9685408703</td>
+						</tr>
+						<tr class="info">
+							<td>RatlamM(RL)</td>
+							<td>Shri, Harish Chandwani, Hon. Secretary, Ratlam DBA, Exe. Member MPBA, <br>14/15, Iind
+								Floor , Yamnotri Appartment, Shastri Nagar, Ratlam, M.P., Ph.No.- 9425103526</td>
+						</tr>
+						<tr class="success">
+							<td>Rewa(RE)</td>
+							<td>Shri Mohd. Ishtiaq, Hon. Secretary, Rewa DBA, <br> Shakoor Cottons, Kacheri Road, Near
+								Khanna Churaha, REWA, M.P., Ph.No.- 9425841888</td>
+						</tr>
+						<tr class="danger">
+							<td>Sagar(SG)</td>
+							<td>Shri D.S. Chawala, Hon. Secretary, Sagar DBA, M/S New Chawala Transport Co., <br>Near
+								Gurudwara, Bhagawan Ganj, Sagar, M.P., Ph.No.- 9425170569</td>
+						</tr>
+						<tr class="info">
+							<td>Satna(ST)</td>
+							<td>Shri Pawan Tiwari, Hon. Secretary, Satna DBA,<br> Umadi Galli, No. 4, Satna, M.P.,
+								Ph.No.- 9406751727</td>
+						</tr>
+						<tr class="success">
+							<td>Sehore(SR)</td>
+							<td>Shri Purshottam Quiya, Hon. Secretary, Sehore DBA, Bara Bazar, Sehore, M.P., Ph.No.-
+								9826016743</td>
+						</tr>
+						<tr class="danger">
+							<td>Seoni(SO)</td>
+							<td>Shri Sunil Agrawal, Hon. Secretary, Seoni DBA, Ganesh Hotel, <br>Bus Stand, Seoni, M.P.,
+								Ph.No.- 9424787343</td>
+						</tr>
+						<tr class="info">
+							<td>Shajapur(SJ)</td>
+							<td>Shri G.B. Saxena, Hon. Secretary, Shajapur DBA <br>62, A.B. Road, Shajapur , M.P.,
+								Ph.No.- 9425034489</td>
+						</tr <tr class="success">
+						<td>Shivpuri(SP)</td>
+						<td>Shri Nikhil Chocksey, Hon. Secretary, Shivpuri DBA, Kalar Bagh <br>Navgrah Temple, Shivpuri,
+							M.P., Ph.No.- 9827629005</td>
+						</tr>
+						<tr class="danger">
+							<td>Singrauli(SN)</td>
+							<td>Shri Rajib Ghosh, Hon. Secretary, Singrauli DBA, <br>B/367, Sector-7 Nigahi Project NCL
+								District Singrauli, M.P., Ph.No.- 9424647802</td>
+						</tr>
+						<tr class="info">
+							<td>Ujjain(UJ )</td>
+							<td>Shri Omkar Pal, Hon. Secretary, Ujjain DBA, <br>C/O Shri Prabhat Sirsat, J K Hospital 4,
+								Sant Nagar, Near Sindhi Colony, M.P.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<script>
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date(); a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-103651154-1', 'auto');
+			ga('send', 'pageview');
+
+		</script>
+</body>
+
+</html>
